@@ -38,15 +38,61 @@ body{
 }
 .main-menu{
     background-color: white;
+    *{
+        font-size: 15px;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+    }
+    .box-main-menu{
+        max-height: 110px;
+    }
     .box-logo{
         background-color: #820000;
         max-width: 110px;
         max-height: 110px;
         width: 110px;
         a img{
-            object-fit: cover;
             width: 100%;
             height: 100%;
+        }
+    }
+    ul li{
+        min-height: 110px;
+        padding: 35px 20px;
+    }
+    .search-form{
+        padding: 35px 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .upper-menu{
+        display: none !important;
+    }
+    .main-menu {
+        align-items: center;
+        .container-fluid {
+            justify-content: flex-end;
+        }
+        ul li{
+            min-height: 0px;
+            padding: 0px 0px;
+        }
+        .box-main-menu{
+            max-height: 100%;
+        }
+        .box-logo{
+            max-width: 40px;
+            max-height: 40px;
+            width: 100%;
+
+        }
+        #navbarTogglerDemo2 {
+            width: 93vw;
+            background-color: white;
+            position: absolute;
+            left: -40px;
+            padding: 0 10px 0px 10px;
+            top: 48.5px;
         }
     }
 }
