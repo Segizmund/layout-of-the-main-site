@@ -1,7 +1,9 @@
 @import "root-style.css";
+@import "font-import.css";
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 body{
     background-color: var(--primary-background-color);
@@ -13,10 +15,16 @@ body{
 .upper-menu{
     padding-right: 3.3%;
     *{
+        color: #5e5058;
         font-size: 14px;
+        font-family: "Jost", sans-serif;
+    }
+    h2{
+        padding: 14px;
+        margin: 0;
     }
     .nav a{
-        color: #6A5D64;
+        padding: 14px;
         font-weight: 500;
         transition: var(--transition-link);
 
