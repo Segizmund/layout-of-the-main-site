@@ -9,7 +9,7 @@
           rel="stylesheet"
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/scss/main-style.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
     <title>Главная страница</title>
 </head>
 <body>
@@ -41,10 +41,12 @@
                     </a>
                 </div>
                 <div class="box-main-menu d-flex justify-content-between align-items-center w-100">
-                        <nav class="navbar navbar-expand-xl navbar-light w-100">
+                        <nav class="navbar navbar-expand-lg navbar-light w-100">
                             <div class="container-fluid">
-                                <button class="navbar-toggler align-items-en" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
+                                <button class="navbar-toggler align-items-en rounded-0  border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="box-hamburg">
+                                        <i class="bi bi-list"></i>
+                                    </span>
                                 </button>
                                 <div class="collapse navbar-collapse collapsed" id="navbarTogglerDemo2">
                                     <ul class="navbar-nav me-auto mb-2 mb-xl-0">
@@ -67,13 +69,42 @@
                                             <a class="nav-link" href="#">Новости</a>
                                         </li>
                                     </ul>
-                                    <form class="search-form d-flex">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
-                                    </form>
+                                    <div class="search-and-btn-box">
+                                        <form class="search-form d-flex">
+                                            <input class="form-control rounded-0" type="search" placeholder="Поиск" aria-label="Search">
+                                            <button class="btn btn-outline-success rounded-0 border-0" type="submit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                        <div class="personal-account-box">
+                                            <button class="personal-account-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                                                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                                                </svg>
+                                                <span>Личный кабинет</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
+                    <div class="about-melsu-menu new-menu">
+                        <div class="box-dropdown-menu">
+
+                        </div>
+                        <div class="box-dropdown-menu">
+
+                        </div>
+                        <div class="box-dropdown-menu">
+
+                        </div>
+                        <div class="box-dropdown-menu">
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
