@@ -288,6 +288,7 @@ body{
 /* Slider style*/
 .slider-section{
     height: auto;
+    position: relative;
     max-height: 850px;
 }
 .box-slider {
@@ -442,7 +443,7 @@ body{
 }
 @media screen and (max-width: 1920px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 600px;
         }
 
@@ -450,15 +451,22 @@ body{
 }
 @media screen and (max-width: 1680px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 580px;
         }
-
+        .box-info-under-slider{
+            .under-info{
+                width: 45% !important;
+                .text-under-info{
+                    font-size: 16px !important;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 1536px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 530px;
         }
 
@@ -466,39 +474,39 @@ body{
 }
 @media screen and (max-width: 1440px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 500px;
         }
+        .box-info-under-slider{
+            .under-info{
 
+                .text-under-info{
+                    font-size: 16px !important;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 1366px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 474px;
         }
-
     }
 }
 @media screen and (max-width: 1280px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 444px;
         }
-
-    }
-}
-@media screen and (max-width: 1280px) {
-    .slider-section{
-        & *{
-            max-height: 444px;
+        .info-under-slider{
+            bottom: -50px;
         }
-
     }
 }
 @media screen and (max-width: 1024px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 355px;
         }
         .slide_buttons{
@@ -507,11 +515,23 @@ body{
                 font-size: 20px;
             }
         }
+        .info-under-slider{
+            bottom: -119px;
+            width: 100%;
+            .box-info-under-slider{
+                .under-info{
+                    width: 50% !important;
+                    .text-under-info{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 991px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 345px;
         }
         .slide_buttons{
@@ -541,12 +561,25 @@ body{
                 opacity: 1;
             }
         }
-
+        .info-under-slider{
+            bottom: -239px;
+            width: 100%;
+            .box-info-under-slider{
+                flex-direction: column;
+                .under-info{
+                    height: 92px;
+                    width: 100% !important;
+                    .text-under-info{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 768px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 266px;
         }
         .directional_nav {
@@ -566,7 +599,7 @@ body{
 }
 @media screen and (max-width: 425px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 147px;
         }
         .directional_nav {
@@ -577,30 +610,105 @@ body{
                 }
             }
         }
+        .info-under-slider{
+            bottom: -240px;
+            .box-info-under-slider{
+                flex-direction: column;
+                .under-info{
+                    padding: 15px;
+                    .text-under-info{
+                        font-size: 14px;
+                    }
+                    .icon-box svg{
+                        width: 20px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 375px) {
     .slider-section {
-        & * {
+        & .sldr {
             max-height: 130px;
         }
-    }
-
-    .slide_buttons {
-        a.slide_btn {
-            font-size: 16px !important;
+        .slide_buttons {
+            a.slide_btn {
+                font-size: 16px !important;
+            }
+        }
+        .info-under-slider{
+            bottom: -239px;
+            .box-info-under-slider{
+                flex-direction: column;
+                .under-info{
+                    padding: 15px;
+                    .text-under-info{
+                        font-size: 14px;
+                    }
+                    .icon-box svg{
+                        width: 20px;
+                    }
+                }
+            }
         }
     }
 }
 @media screen and (max-width: 320px) {
     .slider-section{
-        & *{
+        & .sldr{
             max-height: 111px;
         }
 
     }
 }
 /*END Slider style*/
+
+/*Info under slider style*/
+.info-under-slider{
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    bottom: -65px;
+    .box-info-under-slider{
+        display: flex;
+        .under-info{
+            width: 35%;
+            min-height: 120px;
+            align-content: center;
+            background-color: var(--primary-color);
+            padding: 30px;
+            .icon-box{
+                margin-right: 10px;
+                width: 28px;
+                svg{
+                    fill: white;
+                    width: 28px;
+                }
+            }
+            .text-under-info{
+                font-size: 19px;
+                color: white;
+            }
+        }
+    }
+}
+/*END Info under slider style*/
+/*melsu-today style*/
+.melsu-today-section{
+    position: relative;
+    background-image: url("../../assets/img/lines-vector-map.jpg");
+    background-size: 100%;
+    padding-top: 120px;
+    .overlay-section{
+        min-height: 100%;
+        background-color: transparent;
+        background-image: linear-gradient(310deg, #FFFFFFEB 0%, #F6F6F6 100%);
+        opacity: 0.99;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    }
+}
+/*ENDmelsu-today style*/
 
 /*Side Offset style*/
 .side_offset{
