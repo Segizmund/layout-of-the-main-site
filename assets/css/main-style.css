@@ -6,6 +6,9 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+a{
+    text-decoration: none;
+}
 body{
     background-color: var(--primary-background-color);
 }
@@ -14,7 +17,7 @@ body{
 }
 /*Header style*/
 .hidden{
-    display: none;
+    display: none !important;
 }
 .upper-menu{
     padding-right: 3.3%;
@@ -244,6 +247,7 @@ body{
         }
         #navbarTogglerDemo2 {
             width: 93vw;
+            z-index: 80;
             background-color: white;
             position: absolute;
             left: -52px;
@@ -280,3 +284,352 @@ body{
     }
 }
 /*END Header style*/
+
+/* Slider style*/
+.slider-section{
+    height: auto;
+    max-height: 850px;
+}
+.box-slider {
+    height: auto;
+    max-height: 850px;
+    position: relative;
+    .slider {
+        margin: 0 auto;
+        height: auto;
+        max-height: 850px;
+
+        .slide_viewer {
+            height: 850px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide_group {
+            height: 100%;
+            position: relative;
+            width: 100%;
+        }
+
+        .slide {
+            display: none;
+            max-height: 955px !important;
+            height: auto;
+            max-height: 850px;
+            position: absolute;
+            width: 100%;
+
+            .slide-link img{
+                object-fit: cover;
+                width: 100%;
+                max-height: 955px;
+                height: 100%;
+            }
+        }
+
+        .slide:first-child {
+            display: block;
+        }
+
+        .slide:nth-of-type(1) {
+            background: #D7A151;
+        }
+
+        .slide:nth-of-type(2) {
+            background: #F4E4CD;
+        }
+
+        .slide:nth-of-type(3) {
+            background: #C75534;
+        }
+
+        .slide:nth-of-type(4) {
+            background: #D1D1D4;
+        }
+    }
+
+    .slide_buttons {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        text-align: center;
+
+
+        a.slide_btn {
+            color: #6E6B6B;
+            font-size: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 0 0.175em;
+            -webkit-transition: all 0.4s ease-in-out;
+            -moz-transition: all 0.4s ease-in-out;
+            -ms-transition: all 0.4s ease-in-out;
+            -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .slide_btn:before {
+            content: '';
+            position: absolute;
+            right: 20px;
+            background: #fff;
+            height: 1px;
+            width: 0%;
+            margin-top: 17px;
+
+            transition: all .3s ease;
+            border-radius: 3px;
+            opacity: 0;
+
+        }
+        .slide_btn.active:before{
+            width: 100%;
+            opacity: 1;
+        }
+        .slide_btn.active, .slide_btn:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .directional_nav {
+        max-height: 850px;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+
+
+        .previous_btn {
+            bottom: 0;
+            left: 10px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+        }
+
+        .next_btn {
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            right: 10px;
+            top: 0;
+        }
+
+        .previous_btn, .next_btn {
+            cursor: pointer;
+            height: 65px;
+            opacity: 0.5;
+            -webkit-transition: opacity 0.4s ease-in-out;
+            -moz-transition: opacity 0.4s ease-in-out;
+            -ms-transition: opacity 0.4s ease-in-out;
+            -o-transition: opacity 0.4s ease-in-out;
+            transition: opacity 0.4s ease-in-out;
+            width: 65px;
+
+            i:before{
+                font-size: 50px;
+                color: white;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .previous_btn:hover, .next_btn:hover {
+            opacity: 1;
+        }
+    }
+}
+@media screen and (max-width: 1920px) {
+    .slider-section{
+        & *{
+            max-height: 600px;
+        }
+
+    }
+}
+@media screen and (max-width: 1680px) {
+    .slider-section{
+        & *{
+            max-height: 580px;
+        }
+
+    }
+}
+@media screen and (max-width: 1536px) {
+    .slider-section{
+        & *{
+            max-height: 530px;
+        }
+
+    }
+}
+@media screen and (max-width: 1440px) {
+    .slider-section{
+        & *{
+            max-height: 500px;
+        }
+
+    }
+}
+@media screen and (max-width: 1366px) {
+    .slider-section{
+        & *{
+            max-height: 474px;
+        }
+
+    }
+}
+@media screen and (max-width: 1280px) {
+    .slider-section{
+        & *{
+            max-height: 444px;
+        }
+
+    }
+}
+@media screen and (max-width: 1280px) {
+    .slider-section{
+        & *{
+            max-height: 444px;
+        }
+
+    }
+}
+@media screen and (max-width: 1024px) {
+    .slider-section{
+        & *{
+            max-height: 355px;
+        }
+        .slide_buttons{
+            bottom: 10px;
+            a.slide_btn{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .slider-section{
+        & *{
+            max-height: 345px;
+        }
+        .slide_buttons{
+            top: 0;
+            right: 20px;
+            flex-direction: row;
+            a.slide_btn{
+                margin-left: 10px;
+                font-size: 20px;
+            }
+            .slide_btn:before {
+                content: '';
+                position: absolute;
+                right: auto;
+                background: #fff;
+                height: 1px;
+                width: 0%;
+                margin-top: 25px;
+
+                transition: all .3s ease;
+                border-radius: 3px;
+                opacity: 0;
+
+            }
+            .slide_btn.active:before{
+                width: 20%;
+                opacity: 1;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .slider-section{
+        & *{
+            max-height: 266px;
+        }
+        .directional_nav {
+            .previous_btn, .next_btn {
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                i:before {
+                    font-size: 30px;
+                }
+            }
+            .next_btn{
+                text-align: end !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px) {
+    .slider-section{
+        & *{
+            max-height: 147px;
+        }
+        .directional_nav {
+            .previous_btn, .next_btn {
+
+                i:before {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .slider-section {
+        & * {
+            max-height: 130px;
+        }
+    }
+
+    .slide_buttons {
+        a.slide_btn {
+            font-size: 16px !important;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .slider-section{
+        & *{
+            max-height: 111px;
+        }
+
+    }
+}
+/*END Slider style*/
+
+/*Side Offset style*/
+.side_offset{
+    position: fixed;
+    width: 7%;
+    z-index: 9999;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
+    .box-side-social-link{
+        list-style: none;
+        position: absolute;
+        top: 37px;
+        left: calc(50% - 45px);
+        width: 36px;
+        li{
+            margin-bottom: 20px;
+        }
+        .social-link{
+            border-radius: 50%;
+            border: 1px solid #E8E8E8;
+            padding: 7px 8px;
+            text-align: center;
+
+            i:before{
+                color: #584252;
+            }
+        }
+    }
+}
+/*END Side Offset style*/
