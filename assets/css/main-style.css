@@ -316,6 +316,14 @@ body{
         position: absolute;
         transform: translateX(0%);
     }
+    .new-menu{
+        .wrapper-dropdown-menu{
+            flex-direction: column;
+            .box-dropdown-menu{
+                width: 95%;
+            }
+        }
+    }
 }
 @media screen and (max-width: 767px){
     .main-menu {
@@ -972,6 +980,7 @@ body{
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     }
     .wrapper-briefly-about{
+        position: relative;
         max-width: 690px;
 
         .heading-title-h2{
