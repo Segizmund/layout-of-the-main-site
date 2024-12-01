@@ -603,11 +603,12 @@ body{
             }
         }
         .info-under-slider{
-            bottom: -239px;
+            bottom: -183px;
             width: 100%;
             .box-info-under-slider{
                 flex-direction: column;
                 .under-info{
+                    min-height: 0;
                     height: 92px;
                     width: 100% !important;
                     .text-under-info{
@@ -652,13 +653,14 @@ body{
             }
         }
         .info-under-slider{
-            bottom: -240px;
+            bottom: -156px;
             .box-info-under-slider{
                 flex-direction: column;
                 .under-info{
+                    height: 78px;
                     padding: 15px;
                     .text-under-info{
-                        font-size: 14px;
+                        font-size: 14px !important;
                     }
                     .icon-box svg{
                         width: 20px;
@@ -679,13 +681,14 @@ body{
             }
         }
         .info-under-slider{
-            bottom: -239px;
+            bottom: -108px;
             .box-info-under-slider{
                 flex-direction: column;
                 .under-info{
                     padding: 15px;
+                    height: 54px;
                     .text-under-info{
-                        font-size: 14px;
+                        font-size: 11px !important;
                     }
                     .icon-box svg{
                         width: 20px;
@@ -699,6 +702,22 @@ body{
     .slider-section{
         & .sldr{
             max-height: 111px;
+        }
+        .info-under-slider{
+            bottom: -156px;
+            .box-info-under-slider{
+                flex-direction: column;
+                .under-info{
+                    padding: 15px;
+                    height: 78px;
+                    .text-under-info{
+                        font-size: 11px !important;
+                    }
+                    .icon-box svg{
+                        width: 20px;
+                    }
+                }
+            }
         }
 
     }
@@ -736,27 +755,289 @@ body{
 }
 /*END Info under slider style*/
 
-/*melsu-today style*/
+/*melsu today style*/
 .heading-title-h2{
     font-weight: 700;
     font-size: 39px;
+    padding: 20px;
 }
 .melsu-today-section{
+    z-index: 1;
     position: relative;
     background-image: url("../../assets/img/lines-vector-map.jpg");
     background-size: 100%;
-    padding-top: 120px;
     .overlay-section{
-        height: 100%;
+        top: 0;
+        width: 100%;
+        position: absolute;
+        height: 596.59px;
         background-color: transparent;
         background-image: linear-gradient(310deg, #FFFFFFEB 0%, #F6F6F6 100%);
         opacity: 0.99;
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     }
+    .wrapper-info-box:last-child{
+        border-right: 1px solid lightgray;
+    }
+    .wrapper-info-box{
+        position: relative;
+        bottom: -120px;
+    }
+    .header-today-box{
+        position: relative;
+        top: 100px;
+    }
+    .info-box{
+        border-left: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        max-height: 455px;
+        & *{
+           font-family: "Jost", sans-serif;
+        }
+        padding: 35px;
+        background-color: white;
+        .text-box p{
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #4C4C4C;
+            margin-bottom: 20px;
+        }
+        .box-person-icon{
+            margin-bottom: 50px;
+        }
+        .red-line{
+            border-block-start: 2px solid var(--secondary-color);
+            width: 114px;
+            margin-bottom: 20px;
+        }
+        .point-menu-list{
+            margin-bottom: 20px;
+            ul{
+                list-style-position: inside;
+                padding-left: 0;
+            }
+            li{
+                color: #820000;
+                font-size: 16px;
+                line-height: 1.9em;
+            }
+            li a{
+                color: #4C4C52;
+            }
+        }
+    }
+    .btn-more-box {
+        margin-top: 20px;
+        .btn-more {
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2B1320;
+        }
+        i:before{
+            transition: var(--transition-link);
+            color: var(--primary-color);
+            font-size: 30px;
+            margin-left: 10px;
+        }
+    }
+    .btn-more-box:hover i:before{
+        font-size: 31px;
+        color: var(--secondary-color);
+    }
 }
-/*ENDmelsu-today style*/
+@media screen and (max-width: 1300px){
+    .melsu-today-section {
+        .info-box {
+            max-height: 518px;
+        }
+    }
+}
+@media screen and (max-width: 1199px){
+    .melsu-today-section {
+        .overlay-section{
+            height: 2030.84px;
+        }
+        .wrapper-info-box:last-child {
+            border-right: none !important;
+        }
 
-/*Side Offset style*/
+        .wrapper-info-box > .info-box:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            border: 1px solid lightgray;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .melsu-today-section{
+        .header-today-box{
+            max-height: 455px;
+            top: 115px;
+        }
+        .overlay-section{
+            height: 2021.59px;
+        }
+    }
+}
+@media screen and (max-width: 991px){
+    .melsu-today-section{
+        .wrapper-melsu-section{
+            margin-top: 175px;
+            padding-bottom: 12px;
+        }
+        .header-today-box{
+            top: 10px;
+        }
+        .overlay-section{
+            height: 2042.84px;
+        }
+        .wrapper-info-box{
+            bottom: 0;
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .melsu-today-section{
+        .header-today-box{
+            top: -10px;
+            .heading-title-h2{
+                font-size: 24px;
+            }
+        }
+        .overlay-section{
+            height: 2006.84px;
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .melsu-today-section {
+        .wrapper-melsu-section {
+            margin-top: 108px;
+        }
+        .header-today-box{
+            top: 0px;
+            .heading-title-h2{
+                font-size: 24px;
+            }
+        }
+        .overlay-section{
+            height: 2035.64px;
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .melsu-today-section {
+        .wrapper-melsu-section {
+            margin-top: 156px;
+            .wrapper-info-box{
+                .info-box{
+                    max-height: 100%;
+                }
+            }
+        }
+        .header-today-box{
+            top: 0px;
+            .heading-title-h2{
+                font-size: 24px;
+            }
+        }
+        .overlay-section{
+            height: 2095.59px;
+        }
+    }
+}
+/*END melsu today style*/
+
+/* melsu briefly about style*/
+.melsu-briefly-about{
+    position: relative;
+    z-index: 0;
+    padding: 200px 80px;
+    background-image: url(../../assets/img/honeycombs1.png);
+    background-position: bottom center;
+    background-size: cover;
+    .dark-background-overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 679.39px;
+        position: absolute;
+        background-color: #2509099E;
+        opacity: 0.87;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    }
+    .wrapper-briefly-about{
+        max-width: 690px;
+
+        .heading-title-h2{
+            text-align: center;
+            padding: 0;
+            color: white;
+            line-height: 1.2em;
+        }
+    }
+    p{
+        font-family: "Jost", sans-serif;
+        text-align: center;
+        font-weight: 500;
+        color: white;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 767px){
+    .melsu-briefly-about{
+        padding: 40px 12px;
+        .dark-background-overlay{
+            height: 359.39px;
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .melsu-briefly-about{
+        padding: 40px 12px;
+        .dark-background-overlay{
+            height: 314.39px;
+        }
+        .wrapper-briefly-about{
+            padding: 0;
+            max-width: 100%;
+            margin: 0;
+
+            .heading-title-h2{
+                text-align: center;
+                font-size: 24px;
+                padding: 0;
+                color: white;
+                line-height: 1.2em;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .melsu-briefly-about{
+        .dark-background-overlay{
+            height: 343.19px;
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .melsu-briefly-about{
+        .dark-background-overlay{
+            height: 370.19px;
+        }
+    }
+}
+/*END melsu briefly about style*/
+
+/*side Offset style*/
 .side_offset{
     position: fixed;
     width: 7%;
@@ -791,4 +1072,4 @@ body{
         display: none;
     }
 }
-/*END Side Offset style*/
+/*END side Offset style*/
