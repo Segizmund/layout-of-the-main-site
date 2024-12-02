@@ -1241,10 +1241,15 @@ body{
                 }
             }
         }
-
-    @media screen and (max-width: 1366px){
+@media screen and(max-width: 1199px){
+    .wrapper-news{
+        min-height: 1346px;
+    }
+}
+@media screen and (max-width: 1366px){
         .wrapper-news{
             padding-top: 40px;
+            min-height: 1322px;
             .news-block-box,.event-block-box,.anons-block-box {
                 .news-block {
                     flex-wrap: wrap;
@@ -1261,7 +1266,7 @@ body{
             }
             .other-news-block {
                 flex-wrap: wrap;
-
+                margin-top: 25px;
                 .other-news-box {
                     max-width: 49%;
                     width: 49%;
@@ -1276,9 +1281,18 @@ body{
                 }
             }
         }
+    .wrapper-news.elm {
+        min-height: 780px;
     }
+    }
+@media screen and (max-width: 1024px){
+    .wrapper-news {
+        min-height: 1327px;
+    }
+}
 @media screen and (max-width: 767px){
     .wrapper-news{
+        min-height: 1297px;
         .news-block-box,.event-block-box,.anons-block-box {
             .news-block {
                 .news-box:nth-child(3),
@@ -1289,16 +1303,22 @@ body{
 
         }
         .other-news-block {
+            margin-top: 15px;
             .other-news-box:nth-child(1),
             .other-news-box:nth-child(2){
                 margin-bottom: 15px;
             }
         }
     }
+    .wrapper-news.elm {
+        min-height: 760px;
+    }
 }
 @media screen and (max-width: 425px){
     .wrapper-news{
+        min-height: 1470px;
         padding-top: 40px;
+        margin-bottom: 12px;
         .news-block-box,.event-block-box,.anons-block-box {
             .news-block {
                 .news-box {
@@ -1314,6 +1334,7 @@ body{
 
         }
         .other-news-block {
+            display: none;
             flex-wrap: wrap;
 
             .other-news-box {
@@ -1338,10 +1359,98 @@ body{
             }
         }
     }
+    .wrapper-news.elm {
+        min-height: 1470px;
+        margin-bottom: 12px;
+    }
 }
     /*END wrapper news*/
 /*END news section style*/
 
+/* map section style*/
+.map-section{
+    padding-top: 40px;
+    background-image: url(../../assets/img/bg-map.png);
+    background-position: bottom center;
+    background-size: cover;
+    min-height: 647px;
+    .map-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 285px;
+        background-color: white;
+        border-radius: 15px;
+        max-width: 325px;
+        padding: 24px;
+        h4{
+            font-weight: bold;
+        }
+    }
+}
+@media screen and (max-width: 1366px){
+    .map-section{
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width: 425px){
+    .map-section{
+        min-height: 309px;
+        padding: 12px;
+        .map-wrapper{
+            padding: 0;
+        }
+        .map-card{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+/*END map section style*/
+
+/*footer style*/
+
+/*END footer style*/
+footer{
+    *{
+        font-family: "Jost", sans-serif;
+    }
+    .header-footer{
+        .upper-footer-box {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1320px;
+            align-items: center;
+            margin: 0 auto;
+            .box-logo {
+                background-color: var(--primary-color);
+                max-width: 130px;
+                max-height: 130px;
+                width: 130px;
+
+                a img {
+                    width: 130px;
+                    height: 130px;
+                }
+            }
+            .footer-menu-box {
+                width: 60%;
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        font-weight: 500;
+                        color: black;
+                        transition: var(--transition-link);
+                    }
+                    a:hover{
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+}
 /*side Offset style*/
 .side_offset{
     position: fixed;
