@@ -1,9 +1,7 @@
 let btns = document.querySelectorAll('.nav-btns a');
 let moreBtns = document.querySelectorAll('.more-btns .btn-more-box');
 let wrapperBox = document.querySelector('.wrapper-news');
-console.log(wrapperBox);
 let contentWrapper = document.querySelectorAll('.wrapper-news .elem');
-console.log(contentWrapper);
 btns.forEach((point, index) => {
     point.addEventListener('click', () => {
         btns.forEach(btn => {
