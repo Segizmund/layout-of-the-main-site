@@ -22,6 +22,9 @@ body{
 .main-wrapper{
     padding-left: 7%;
 }
+.main-section{
+    min-height: calc(100vh - 530px);
+}
 @media screen and (max-width: 767px) {
     .main-wrapper{
         padding-left: 0;
@@ -1673,6 +1676,7 @@ body{
 /*footer style*/
 
 footer{
+    background-color: white;
     *{
         font-family: "Jost", sans-serif;
     }
