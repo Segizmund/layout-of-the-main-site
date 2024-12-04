@@ -9,6 +9,7 @@
 }
 @media (max-width: 1024px) {
     .container.custom {
+        padding: 12px 12px;
         max-width: 100% !important;
     }
 }

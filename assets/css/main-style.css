@@ -824,6 +824,8 @@ body{
     }
 }
 .btn-more-box {
+    display: flex;
+    align-items: center;
     margin-top: 20px;
     .btn-more {
         font-family: "Montserrat", sans-serif;
@@ -839,7 +841,6 @@ body{
     }
 }
 .btn-more-box:hover i:before{
-    font-size: 31px;
     color: var(--secondary-color);
 }
 @media screen and (max-width: 1300px){
