@@ -1218,6 +1218,7 @@ body{
             background-color: white;
             border: 1px solid lightgray;
             .other-news-box{
+                position: relative;
                 min-height: 260px;
                 display: flex;
                 flex-direction: column;
@@ -1244,6 +1245,13 @@ body{
                 .meta{
                     font-size: 12px;
                 }
+            }
+            .news-border{
+                position: absolute;
+                border-right: 1px dotted lightgray;
+                height: 80%;
+                right: -2%;
+
             }
         }
 
@@ -1274,11 +1282,25 @@ body{
                 }
                 .other-news-box:nth-child(1),
                 .other-news-box:nth-child(2){
-                    margin-bottom: 25px;
                     span{
                         border-bottom: 1px dotted lightgray;
                         padding-bottom: 20px;
                     }
+                }
+            }
+            .other-news-box:nth-child(2){
+                .news-border{
+                    display: none;
+                }
+            }
+            .other-news-box:nth-child(3) {
+                .news-border {
+                    position: absolute;
+                    border-right: 1px dotted lightgray;
+                    height: 90%;
+                    right: -2%;
+                    top: -1%;
+
                 }
             }
         }
