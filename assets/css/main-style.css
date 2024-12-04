@@ -959,7 +959,7 @@ body{
         top: 0;
         left: 0;
         width: 100%;
-        height: 679.39px;
+        height: 100%;
         position: absolute;
         background-color: #2509099E;
         opacity: 0.87;
@@ -988,7 +988,7 @@ body{
     .melsu-briefly-about{
         padding: 40px 12px;
         .dark-background-overlay{
-            height: 359.39px;
+            height: 100%;
         }
     }
 }
@@ -996,7 +996,7 @@ body{
     .melsu-briefly-about{
         padding: 40px 12px;
         .dark-background-overlay{
-            height: 314.39px;
+            height: 100%;
         }
         .wrapper-briefly-about{
             padding: 0;
@@ -1019,14 +1019,14 @@ body{
 @media screen and (max-width: 375px){
     .melsu-briefly-about{
         .dark-background-overlay{
-            height: 343.19px;
+            height: 100%;
         }
     }
 }
 @media screen and (max-width: 320px){
     .melsu-briefly-about{
         .dark-background-overlay{
-            height: 370.19px;
+            height: 100%;
         }
     }
 }
@@ -1035,6 +1035,7 @@ body{
 /*news section style*/
 .news-section{
     .box-nav-btns{
+        margin: 20px 0;
         display: flex;
         justify-content: space-between;
         .nav-btns {
@@ -1121,6 +1122,7 @@ body{
     /*wrapper news*/
 
 .wrapper-news {
+    margin-bottom: 20px;
     position: relative;
     padding-top: 40px;
     min-height: 680px;
