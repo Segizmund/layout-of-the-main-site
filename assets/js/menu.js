@@ -6,7 +6,7 @@ function checkScreenWidth() {
         menuPoints.forEach((point, index) => {
             point.addEventListener('mouseover', () => {
                 if (dropDownMenus[index]) {
-                    dropDownMenus[index].classList.remove('hidden');
+                    dropDownMenus[index].classList.remove('hidde');
                     content.style.opacity = '0.3';
                     point.style.color = '#c10f1a';
                 }
@@ -14,14 +14,14 @@ function checkScreenWidth() {
 
             point.addEventListener('mouseleave', () => {
                 if (dropDownMenus[index] && !dropDownMenus[index].contains(event.relatedTarget)) {
-                    dropDownMenus[index].classList.add('hidden');
+                    dropDownMenus[index].classList.add('hidde');
                     content.style.opacity = '1';
                     point.style.color = '#820000';
                 }
             });
             if (dropDownMenus[index]) {
                 dropDownMenus[index].addEventListener('mouseleave', () => {
-                    dropDownMenus[index].classList.add('hidden');
+                    dropDownMenus[index].classList.add('hidde');
                     content.style.opacity = '1';
                     point.style.color = '#820000';
                 });
@@ -32,7 +32,7 @@ function checkScreenWidth() {
         let backButtons = document.querySelectorAll('.back-btn');
         for (let i = 0; i < dropDownMenus.length; i++) {
             if (dropDownMenus[i]) {
-                dropDownMenus[i].classList.remove('hidden');
+                dropDownMenus[i].classList.remove('hidde');
                 if(!dropDownMenus[i].classList.contains('mob-menu')){
                     dropDownMenus[i].classList.add('mob-menu');
                 }

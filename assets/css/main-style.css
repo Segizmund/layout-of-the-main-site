@@ -32,7 +32,7 @@ body{
 }  /*END main wrapper style*/
 
 /*Header style*/
-.hidden{
+.hidde{
     display: none !important;
 }
 .upper-menu{
@@ -1878,9 +1878,10 @@ footer{
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
     .box-side-social-link{
         list-style: none;
+        padding: 0;
         position: absolute;
         top: 37px;
-        left: calc(50% - 45px);
+        left: calc(50% - 23px);
         width: 36px;
         li{
             margin-bottom: 20px;
@@ -1912,3 +1913,22 @@ footer{
     }
 }
 /*END side Offset style*/
+
+/*main template style*/
+.left-side-menu-box{
+    min-height: calc(100vh - 530px);
+    display: flex;
+    z-index: 0;
+    height: 100vh;
+    .left-side-menu{
+        li{
+            transition: var(--transition-link);
+            border-bottom: 1px solid white;
+        }
+        li:hover {
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+    }
+}
+/*END main template style*/
