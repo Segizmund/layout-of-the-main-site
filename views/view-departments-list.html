@@ -9,49 +9,51 @@
     <link rel="stylesheet" href="../assets/css/main-style.css">
     <link rel="stylesheet" href="../assets/css/new-tailwind.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Департаменты</title>
+    <title>Template-list</title>
 </head>
 <body>
                     <div class="max-w-[978px] w-[100%]">
-                        <div class="mb-9">
-                            <input  type="text" id="search-in-box" class="w-[100%] border-[1px] p-[12px]" placeholder="Поиск">
-                        </div>
-                        <div class="box-searching bg-white p-6 sm:min-h-[342px] flex flex-col justify-between">
-                            <div class="mb-7 sm:mb-0">
-                                <h2 class="font-bold text-2xl mb-5 name">Департамент информационной политики</h2>
-                                <div class="flex flex-col sm:flex-row">
-                                    <span class="text-[#4C4C4C] text-lg">
-                                        Директор:
-                                    </span>
-                                    <span class="text-[var(--secondary-color)] text-lg pt-3 sm:ps-3 sm:pt-0 sku">
-                                        Матвиенко Ирина Владиславовна
-                                    </span>
-                                </div>
+                        <div class="parent">
+                            <div class="mb-9">
+                                <input  type="text" id="search-in-box" class="w-[100%] border-[1px] p-[12px]" placeholder="Поиск">
                             </div>
-                                <div class="flex justify-between flex-col sm:flex-row mb-7 sm:mb-0">
-                                    <div class="w-[100%] mb-7 sm:mb-0">
+                            <div class="box-searching bg-white p-6 sm:min-h-[342px] flex flex-col justify-between">
+                                <div class="mb-7 sm:mb-0">
+                                    <h2 class="font-bold text-2xl mb-5 name">Департамент информационной политики</h2>
+                                    <div class="flex flex-col sm:flex-row">
                                         <span class="text-[#4C4C4C] text-lg">
-                                            Адрес:
+                                            Директор:
                                         </span>
-                                        <p class="font-semibold text-lg text-[#4C4C4C]">
-                                            корпус 1, ауд. 209
-                                        </p>
-                                    </div>
-                                    <div class="w-[100%]">
-                                        <span class="text-[#4C4C4C] text-lg">
-                                            Телефон:
+                                        <span class="text-[var(--secondary-color)] text-lg pt-3 sm:ps-3 sm:pt-0 sku">
+                                            Матвиенко Ирина Владиславовна
                                         </span>
-                                        <p class="font-semibold text-lg text-[#4C4C4C]">
-                                            +7 (990) 142-78-65
-                                        </p>
                                     </div>
                                 </div>
-                            <div class="btn-more-box">
-                                <a href="#" class="btn-more">Страница департамента</a>
-                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                    <div class="flex justify-between flex-col sm:flex-row mb-7 sm:mb-0">
+                                        <div class="w-[100%] mb-7 sm:mb-0">
+                                            <span class="text-[#4C4C4C] text-lg">
+                                                Адрес:
+                                            </span>
+                                            <p class="font-semibold text-lg text-[#4C4C4C]">
+                                                корпус 1, ауд. 209
+                                            </p>
+                                        </div>
+                                        <div class="w-[100%]">
+                                            <span class="text-[#4C4C4C] text-lg">
+                                                Телефон:
+                                            </span>
+                                            <p class="font-semibold text-lg text-[#4C4C4C]">
+                                                +7 (990) 142-78-65
+                                            </p>
+                                        </div>
+                                    </div>
+                                <div class="btn-more-box">
+                                    <a href="#" class="btn-more">Страница ...</a>
+                                    <i class="bi bi-arrow-right-circle-fill"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <script src="../assets/js/search-in-box.js"></script>
 </body>
 </html>
