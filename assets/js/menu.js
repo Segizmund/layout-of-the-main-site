@@ -1,8 +1,9 @@
 let menuPoints = document.querySelectorAll('.point-menu');
 let dropDownMenus = document.querySelectorAll('.new-menu');
 let content = document.querySelector('.main-section');
+let navBar = document.querySelector('.navbar-collapse');
 function checkScreenWidth() {
-    if (window.matchMedia("(min-width: 992px)").matches) {
+    if (window.matchMedia("(min-width: 1025px)").matches) {
         menuPoints.forEach((point, index) => {
             point.addEventListener('mouseover', () => {
                 if (dropDownMenus[index]) {
@@ -29,6 +30,7 @@ function checkScreenWidth() {
         });
     } else {
         let hamburger = document.querySelector('.navbar-toggler');
+        console.log(navBar);
         let backButtons = document.querySelectorAll('.back-btn');
         for (let i = 0; i < dropDownMenus.length; i++) {
             if (dropDownMenus[i]) {
@@ -39,6 +41,7 @@ function checkScreenWidth() {
             }
         }
         hamburger.addEventListener('click', () => {
+            navBar.classList.toggle('opened');
            document.body.classList.toggle('no-scroll');
             content.classList.toggle('opacit');
            for (let i = 0; i < dropDownMenus.length; i++) {

@@ -112,6 +112,7 @@ body{
     }
     form button{
         color: white;
+        padding: 12px ;
         background-color: var(--primary-color);
 
         &:hover{
@@ -1955,3 +1956,25 @@ footer{
     }
 }
 /*END main template style*/
+
+/*accordion style*/
+.accordion{
+    position: relative;
+}
+.accordion-content-box{
+    height: 0px;
+    position: absolute;
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+}
+.accordion-box{
+    background-color: white;
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+}
+.accordion-content-box.show{
+    height: 100%;
+}
+.accordion-box svg{
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+    transform: rotateZ(0);
+}
+/*END accordion style*/
