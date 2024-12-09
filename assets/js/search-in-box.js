@@ -1,3 +1,4 @@
+if(document.querySelector('.parent')){
 const parent = document.querySelector('.parent');
 const searchInput = document.getElementById('search-in-box');
 
@@ -12,3 +13,4 @@ searchInput.addEventListener('input', function() {
         }
     });
 });
+}
