@@ -2007,3 +2007,14 @@ footer{
     transform: rotateZ(0);
 }
 /*END accordion style*/
+
+/*menu page style*/
+.menu-box{
+    * {
+        transition: var(--transition-link);
+    }
+    *:hover img{
+        opacity: 0.8;
+    }
+}
+/*END menu page style*/
