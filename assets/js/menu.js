@@ -30,7 +30,6 @@ function checkScreenWidth() {
         });
     } else {
         let hamburger = document.querySelector('.navbar-toggler');
-        console.log(navBar);
         let backButtons = document.querySelectorAll('.back-btn');
         for (let i = 0; i < dropDownMenus.length; i++) {
             if (dropDownMenus[i]) {
