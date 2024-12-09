@@ -908,6 +908,7 @@ body{
 }
 .btn-more-box {
     display: flex;
+    cursor: pointer;
     align-items: center;
     margin-top: 20px;
     .btn-more {
