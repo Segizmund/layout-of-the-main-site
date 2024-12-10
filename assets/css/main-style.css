@@ -24,6 +24,7 @@ body{
 }
 .main-section{
     min-height: calc(100vh - 530px);
+    padding-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
     .main-wrapper{
@@ -1188,7 +1189,7 @@ body{
 .anons-block-box.active{
     opacity: 1;
 }
-            .news-block {
+.news-block {
                 display: flex;
                 justify-content: space-between;
 
@@ -1257,8 +1258,7 @@ body{
                     }
                 }
             }
-
-        .other-news-block{
+.other-news-block{
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
@@ -1355,7 +1355,7 @@ body{
         min-height: 780px;
     }
     }
-@media screen and(max-width: 1199px){
+@media screen and (max-width: 1199px){
     .wrapper-news{
         min-height: 1346px;
     }
@@ -1753,6 +1753,7 @@ body{
 /*footer style*/
 
 footer{
+    z-index: 100;
     background-color: white;
     *{
         font-family: "Jost", sans-serif;
@@ -1924,11 +1925,12 @@ footer{
 .side_offset{
     position: fixed;
     width: 7%;
-    z-index: 9999;
+    background-color: #FFFFFF;
+    z-index: 99;
     height: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
+    /*box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);*/
     .box-side-social-link{
         list-style: none;
         padding: 0;
@@ -2018,3 +2020,40 @@ footer{
     }
 }
 /*END menu page style*/
+
+/*getting melsu section style*/
+.getting-melsu-section{
+    background-image: url("../img/static-bg.jpg");
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-repeat: repeat;
+    background-size: 100% auto;
+}
+@media screen and (max-width: 1280px){
+    .getting-melsu-section{
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+    }
+}
+/*END getting melsu section style*/
+/*struct university section style*/
+@media screen and (max-width: 425px){
+    .struct-university-section{
+        .sub-box-menu{
+             & div{
+                min-height: 180px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .struct-university-section{
+        .sub-box-menu{
+            & div{
+                min-height: 204px;
+            }
+        }
+    }
+}
+/*END struct university section style*/
