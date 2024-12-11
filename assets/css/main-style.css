@@ -693,6 +693,9 @@ body{
             position: inherit;
             .box-info-under-slider{
                 flex-direction: column;
+                .under-info:nth-child(1){
+                    border-right: none;
+                }
                 .under-info{
                     min-height: 0;
                     height: 92px;
@@ -815,12 +818,17 @@ body{
     bottom: -65px;
     .box-info-under-slider{
         display: flex;
+        .under-info:nth-child(1){
+            border-right: 1px solid #922121;
+        }
         .under-info{
+            cursor: pointer;
             width: 35%;
             min-height: 120px;
             align-content: center;
             background-color: var(--primary-color);
             padding: 30px;
+            transition: var(--transition-link);
             .icon-box{
                 margin-right: 10px;
                 width: 28px;
@@ -830,9 +838,11 @@ body{
                 }
             }
             .text-under-info{
-                font-size: 19px;
                 color: white;
             }
+        }
+        .under-info:hover{
+            background-color: var(--secondary-color);
         }
     }
 }
@@ -1620,7 +1630,6 @@ body{
                 height: auto;
                 p{
                     color: white;
-                    font-size: 19px;
                 }
             }
         }
