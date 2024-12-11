@@ -127,18 +127,30 @@ body{
     .search-form{
         display: flex;
     }
+    form{
+        overflow: hidden;
+    }
     form input{
         border: 1px solid lightgray;
         padding: 12px;
-
+        transform: translateX(200%);
+        transition: var(--transition-link);
         &:focus{
             box-shadow: none;
             border-color: #DEE2E6;
         }
     }
+    form input.active{
+        border: 1px solid lightgray;
+        transform: translateX(0%);
+        padding: 12px;
+        width: 100%;
+    }
     form button{
+        z-index: 70;
         color: white;
         display: flex;
+        min-height: 48.5px;
         align-items: center;
         padding: 12px;
         background-color: var(--primary-color);

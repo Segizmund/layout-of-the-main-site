@@ -2,6 +2,8 @@ let menuPoints = document.querySelectorAll('.point-menu');
 let dropDownMenus = document.querySelectorAll('.new-menu');
 let content = document.querySelector('.main-section');
 let navBar = document.querySelector('.navbar-collapse');
+let btnSearch = document.querySelector('.search-form button');
+let inputSearch = document.querySelector('.search-form input');
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
         menuPoints.forEach((point, index) => {
@@ -63,7 +65,8 @@ function checkScreenWidth() {
         });
     }
 }
-
 checkScreenWidth();
-
+btnSearch.addEventListener('click', () => {
+    inputSearch.classList.toggle('active');
+});
 window.addEventListener('resize', checkScreenWidth);
