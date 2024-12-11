@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Jost", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .box-heading{
     h2{
@@ -48,7 +48,7 @@ body{
     *{
         color: #5e5058;
         font-size: 14px;
-        font-family: "Jost", sans-serif;
+        font-family: "Montserrat", sans-serif;/*Jost*/
     }
     .box-header-address {
         padding-left: 6%;
@@ -75,7 +75,7 @@ body{
     background-color: white;
     *{
         font-size: 15px;
-        font-family: "Jost", sans-serif;
+        font-family: "Montserrat", sans-serif;/*Jost*/
         font-weight: 500;
     }
     .box-main-menu{
@@ -877,7 +877,7 @@ body{
         border-bottom: 1px solid lightgray;
         max-height: 455px;
         & *{
-           font-family: "Jost", sans-serif;
+            font-family: "Montserrat", sans-serif;/*Jost*/
         }
         padding: 35px;
         background-color: white;
@@ -1051,7 +1051,7 @@ body{
         }
     }
     p{
-        font-family: "Jost", sans-serif;
+        font-family: "Montserrat", sans-serif;/*Jost*/
         text-align: center;
         font-weight: 500;
         color: white;
@@ -1451,7 +1451,7 @@ body{
     .number-section{
         display: flex;
         *{
-            font-family: "Jost", sans-serif;
+            font-family: "Montserrat", sans-serif;/*Jost*/
         }
         .box-number{
             cursor: pointer;
