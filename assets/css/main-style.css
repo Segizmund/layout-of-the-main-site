@@ -133,7 +133,7 @@ body{
     form input{
         border: 1px solid lightgray;
         padding: 12px;
-        transform: translateX(200%);
+        transform: translateX(100%);
         transition: var(--transition-link);
         &:focus{
             box-shadow: none;
@@ -141,10 +141,7 @@ body{
         }
     }
     form input.active{
-        border: 1px solid lightgray;
         transform: translateX(0%);
-        padding: 12px;
-        width: 100%;
     }
     form button{
         z-index: 70;
