@@ -6,6 +6,9 @@ let btnSearch = document.querySelector('.search-form button');
 let inputSearch = document.querySelector('.search-form input');
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
+        btnSearch.addEventListener('click', () => {
+            inputSearch.classList.toggle('active');
+        });
         menuPoints.forEach((point, index) => {
             point.addEventListener('mouseover', () => {
                 if (dropDownMenus[index]) {
@@ -31,6 +34,7 @@ function checkScreenWidth() {
             }
         });
     } else {
+        btnSearch.type = 'submit';
         let hamburger = document.querySelector('.navbar-toggler');
         let backButtons = document.querySelectorAll('.back-btn');
         for (let i = 0; i < dropDownMenus.length; i++) {
@@ -66,7 +70,4 @@ function checkScreenWidth() {
     }
 }
 checkScreenWidth();
-btnSearch.addEventListener('click', () => {
-    inputSearch.classList.toggle('active');
-});
 window.addEventListener('resize', checkScreenWidth);

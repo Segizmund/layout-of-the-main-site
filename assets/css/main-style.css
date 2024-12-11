@@ -231,6 +231,27 @@ body{
         }
     }
 }
+@media screen and (max-width: 1566px){
+    .search-form input {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 1462px){
+    .main-menu {
+
+        .personal-account-box{
+            button {
+                height: 48.5px;
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    .search-form input {
+        width: 120px;
+    }
+}
 @media screen and (max-width: 1430px){
     .main-menu {
         .nav-item {
@@ -356,7 +377,11 @@ body{
             padding: 0 10px 0px 10px;
             top: 58px;
         }
+        form input{
+            transform: translateX(0%);
+        }
         .search-form{
+            transform: translateX(0%);
             width: 100%;
             padding: 10px 10px 40px 10px;
             input{
