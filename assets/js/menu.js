@@ -2,14 +2,11 @@ let menuPoints = document.querySelectorAll('.point-menu');
 let dropDownMenus = document.querySelectorAll('.new-menu');
 let content = document.querySelector('.main-section');
 let navBar = document.querySelector('.navbar-collapse');
-let btnSearch = document.querySelector('.btn-search');
+let btnSearch = document.querySelectorAll('.btn-search');
 let searchBox = document.querySelector('.search-box');
+let closeSeachBox = document.querySelector('.close-search');
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
-        btnSearch.addEventListener('click', () => {
-            searchBox.classList.toggle('active');
-            content.classList.toggle('opacit');
-        });
         menuPoints.forEach((point, index) => {
             point.addEventListener('mouseover', () => {
                 if (dropDownMenus[index]) {
@@ -46,6 +43,11 @@ function checkScreenWidth() {
             }
         }
         hamburger.addEventListener('click', () => {
+            if(searchBox.classList.contains('active')){
+                searchBox.classList.remove('active');
+                content.classList.remove('opacit');
+                document.body.classList.remove('no-scroll');
+            }
             navBar.classList.toggle('opened');
            document.body.classList.toggle('no-scroll');
             content.classList.toggle('opacit');
@@ -69,5 +71,27 @@ function checkScreenWidth() {
         });
     }
 }
+btnSearch.forEach((point, index) => {
+    point.addEventListener('click', () => {
+        if(navBar.classList.contains('opened')){
+            for (let i = 0; i < dropDownMenus.length; i++) {
+                if (dropDownMenus[i]) {
+                    dropDownMenus[i].classList.remove('opened');
+                }
+            }
+            navBar.classList.remove('opened');
+            document.body.classList.remove('no-scroll');
+            content.classList.remove('opacit');
+        }
+        searchBox.classList.toggle('active');
+        content.classList.toggle('opacit');
+        document.body.classList.toggle('no-scroll');
+    });
+});
+closeSeachBox.addEventListener('click', () => {
+    searchBox.classList.remove('active');
+    content.classList.remove('opacit');
+    document.body.classList.remove('no-scroll');
+});
 checkScreenWidth();
 window.addEventListener('resize', checkScreenWidth);

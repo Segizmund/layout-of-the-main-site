@@ -14,7 +14,7 @@
 <body>
 <div class="main-wrapper">
     <header>
-        <div class="upper-menu">
+        <div class="upper-menu bg-[#FAFAFA] z-[82]">
             <div class="box-header-address bg-[#FAFAFA] z-[82]">
                 <h2 class="header-address">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#820000" class="bi bi-geo-alt-fill me-2" viewBox="0 0 16 16">
@@ -37,19 +37,25 @@
                     </a>
                 </nav>
             </div>
-            <div class="search-box w-full bg-[#FAFAFA] py-6">
-                <div class="container custom">
-                    <div class="search-and-close-box">
-                        <h2 class="p-0">Поиск</h2>
-                        <span class="close-search"><i class="bi bi-x-lg me-2"></i>Закрыть</span>
-                    </div>
-                    <form class="search-form">
-                        <input class="form-control rounded-none" type="search" placeholder="Поиск" aria-label="Search">
-                        <button class="btn rounded-none text-white" type="submit">
-                            Искать
-                        </button>
-                    </form>
-                    
+
+        </div>
+        <div class="search-box py-6">
+            <div class="container custom">
+                <div class="search-and-close-box mb-8">
+                    <h2 class="p-0">Поиск</h2>
+                    <span class="close-search"><i class="bi bi-x-lg me-2"></i>Закрыть</span>
+                </div>
+                <form class="search-form mb-8">
+                    <input class="form-control rounded-none" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn rounded-none text-white" type="submit">
+                        Искать
+                    </button>
+                </form>
+                <div class="box-btns grid grid-cols-1 lg:grid-cols-[1fr,1fr,1fr,1fr] gap-3 text-center mb-8">
+                    <a class="uppercase py-[15px] px-[20px]">Искать везде</a>
+                    <a class="uppercase py-[15px] px-[20px]">Новости</a>
+                    <a class="uppercase py-[15px] px-[20px]">Структура сайта</a>
+                    <a class="uppercase py-[15px] px-[20px]">Справочник</a>
                 </div>
             </div>
         </div>
@@ -61,10 +67,15 @@
             </div>
             <div class="box-main-menu">
                 <nav class="navbar">
+                    <button class="btn-search bg-[var(--primary-color)] min-h-[38px] min-w-[38px] flex items-center justify-center absolute right-[55px] top-[13px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
                     <button class="navbar-toggler items-end rounded-0  border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="box-hamburg">
-                                        <i class="bi bi-list"></i>
-                                    </span>
+                        <span class="box-hamburg">
+                            <i class="bi bi-list"></i>
+                        </span>
                     </button>
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">

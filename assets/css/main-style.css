@@ -52,8 +52,10 @@ body{
 }
 /*style search*/
 .search-box {
+    background-color: #FAFAFA;
+    width: 93%;
     transition: var(--transition-link);
-    top: -161px;
+    top: -311px;
     z-index: 81;
     position: absolute;
     padding: 10px;
@@ -68,6 +70,7 @@ body{
             font-weight: bold;
         }
         span{
+            cursor: pointer;
             font-weight: 600;
             text-transform: uppercase;
             font-size: 12px;
@@ -81,6 +84,7 @@ body{
         display: flex;
     }
     .search-form input {
+        outline: none;
         border: 1px solid lightgray;
         padding: 12px;
         width: 100%;
@@ -103,16 +107,45 @@ body{
         min-height: 48.5px;
         justify-content: center;
         align-items: center;
-        padding: 12px;
         background-color: var(--primary-color);
 
         &:hover {
             background-color: #c10f1a;
         }
     }
+    .box-btns{
+        width: 60%;
+        a{
+            font-size: 12px;
+            cursor: pointer;
+            color: var(--primary-color);
+            background-color: #FFFFFF;
+            transition: var(--transition-link);
+            border: 1px solid var(--primary-color);
+        }
+        a.active,a:hover{
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+        }
+    }
 }
 .search-box.active{
     top: 48px;
+}
+@media screen and (max-width: 1230px){
+    .search-box {
+        .box-btns {
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 1230px){
+    .search-box {
+        top: -331px;
+        .box-btns {
+            width: 80%;
+        }
+    }
 }
 /*END search*/
 .upper-menu{
@@ -171,6 +204,9 @@ body{
     ul li{
         min-height: 110px;
         padding: 35px 20px;
+    }
+    .navbar .btn-search{
+        display: none;
     }
     .navbar-toggler{
         display: none;
@@ -340,6 +376,35 @@ body{
     .upper-menu{
         display: none !important;
     }
+    .search-box {
+        background-color: #FFFFFF;
+        top: 64px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        height: 0;
+        overflow: hidden;
+        z-index: 79;
+
+        .search-form input {
+            outline: none;
+            border: 1px solid lightgray;
+            padding: 12px;
+            width: 100%;
+            transition: var(--transition-link);
+
+            &:focus {
+                box-shadow: none;
+                border-color: #DEE2E6;
+            }
+        }
+        .box-btns{
+            width: 100%;
+        }
+    }
+    .search-box.active{
+        top: 64px;
+        height: 40%;
+    }
     .main-menu {
         padding-left: 12px;
         height: 64px;
@@ -368,6 +433,9 @@ body{
         }
         .navbar{
             overflow: hidden;
+            .btn-search{
+                display: flex;
+            }
         }
         .navbar-collapse{
             z-index: 1;
@@ -380,6 +448,7 @@ body{
             top: 64px;
             left: 7%;
             flex-direction: column;
+            justify-content: start;
             .navbar-nav{
                 width: 100%;
                 flex-direction: column;
@@ -399,7 +468,8 @@ body{
             display: block;
             position: absolute;
             right: 10px;
-            top: 10px;
+            top: 13px;
+            max-height: 38px;
             background: var(--primary-color);
             .box-hamburg i:before{
                 color: white;
@@ -488,6 +558,9 @@ body{
     }
 }
 @media screen and (max-width: 767px){
+    .search-box{
+        width: 100%;
+    }
     .main-menu {
         .navbar-collapse {
             background-color: white;
