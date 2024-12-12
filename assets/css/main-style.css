@@ -29,13 +29,14 @@ body{
     overflow: hidden;
 }
 .opacit{
-    opacity: 0.3;
+    opacity: 0.3 !important;
 }
 /*main wrapper style*/
 .main-wrapper{
     padding-left: 7%;
 }
 .main-section{
+    transition: var(--transition-link);
     min-height: calc(100vh - 530px);
     padding-bottom: 10px;
 }
@@ -49,7 +50,74 @@ body{
 .hidde{
     display: none !important;
 }
+/*style search*/
+.search-box {
+    transition: var(--transition-link);
+    top: -161px;
+    z-index: 81;
+    position: absolute;
+    padding: 10px;
+    .search-and-close-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            padding: 0 !important;
+            font-size: 36px;
+            margin-bottom: 1% !important;;
+            font-weight: bold;
+        }
+        span{
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
+            i:before{
+                font-weight: 600 !important;
+                font-size: 12px;
+            }
+        }
+    }
+    .search-form {
+        display: flex;
+    }
+    .search-form input {
+        border: 1px solid lightgray;
+        padding: 12px;
+        width: 100%;
+        transition: var(--transition-link);
+
+        &:focus {
+            box-shadow: none;
+            border-color: #DEE2E6;
+        }
+    }
+    .search-form input.active {
+        transform: translateX(0%);
+    }
+
+    .search-form button {
+        z-index: 70;
+        color: white;
+        display: flex;
+        width: 10%;
+        min-height: 48.5px;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        background-color: var(--primary-color);
+
+        &:hover {
+            background-color: #c10f1a;
+        }
+    }
+}
+.search-box.active{
+    top: 48px;
+}
+/*END search*/
 .upper-menu{
+    z-index: 82;
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-right: 3.3%;
@@ -131,38 +199,6 @@ body{
         margin-right: 3.3%;
         align-items: center;
         column-gap: 20px;
-    }
-    .search-form{
-        display: flex;
-    }
-    form{
-        overflow: hidden;
-    }
-    form input{
-        border: 1px solid lightgray;
-        padding: 12px;
-        transform: translateX(100%);
-        transition: var(--transition-link);
-        &:focus{
-            box-shadow: none;
-            border-color: #DEE2E6;
-        }
-    }
-    form input.active{
-        transform: translateX(0%);
-    }
-    form button{
-        z-index: 70;
-        color: white;
-        display: flex;
-        min-height: 48.5px;
-        align-items: center;
-        padding: 12px;
-        background-color: var(--primary-color);
-
-        &:hover{
-            background-color: #c10f1a;
-        }
     }
     .personal-account-box{
         .personal-account-btn{

@@ -15,7 +15,7 @@
 <div class="main-wrapper">
     <header>
         <div class="upper-menu">
-            <div class="box-header-address">
+            <div class="box-header-address bg-[#FAFAFA] z-[82]">
                 <h2 class="header-address">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#820000" class="bi bi-geo-alt-fill me-2" viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -23,14 +23,34 @@
                     г. Мелитополь, пр. Б. Хмельницкого, д. 18
                 </h2>
             </div>
-            <div class="box-upper-nav">
+            <div class="box-upper-nav bg-[#FAFAFA] z-[82]">
                 <nav class="nav flex align-center">
                     <a class="nav-link" href="#">Студенту</a>
                     <a class="nav-link" href="#">Поступающим</a>
                     <a class="nav-link" href="views/view-aspirantam.html">Аспирантам</a>
                     <a class="nav-link" href="#">Выпустникам</a>
                     <a class="nav-link" href="#">Партнерам</a>
+                    <a class="nav-link btn-search cursor-pointer flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                    </a>
                 </nav>
+            </div>
+            <div class="search-box w-full bg-[#FAFAFA] py-6">
+                <div class="container custom">
+                    <div class="search-and-close-box">
+                        <h2 class="p-0">Поиск</h2>
+                        <span class="close-search"><i class="bi bi-x-lg me-2"></i>Закрыть</span>
+                    </div>
+                    <form class="search-form">
+                        <input class="form-control rounded-none" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn rounded-none text-white" type="submit">
+                            Искать
+                        </button>
+                    </form>
+                    
+                </div>
             </div>
         </div>
         <div class="main-menu">
@@ -68,14 +88,14 @@
                             </li>
                         </ul>
                         <div class="search-and-btn-box">
-                            <form class="search-form">
+                           <!-- <form class="search-form">
                                 <input class="form-control rounded-none" type="search" placeholder="Поиск" aria-label="Search">
                                 <button class="btn rounded-none border-0" type="button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                                     </svg>
                                 </button>
-                            </form>
+                            </form>-->
                             <div class="personal-account-box">
                                 <button class="personal-account-btn flex align-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
@@ -465,7 +485,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="btn-more-box d-flex align-items-center">
+                        <div class="btn-more-box flex items-center">
                             <a href="#" class="btn-more">Подробнее</a>
                             <i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -496,7 +516,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="btn-more-box d-flex align-items-center">
+                        <div class="btn-more-box flex items-center">
                             <a href="#" class="btn-more">Подробнее</a>
                             <i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -527,7 +547,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="btn-more-box d-flex align-items-center">
+                        <div class="btn-more-box flex items-center">
                             <a href="#" class="btn-more">Подробнее</a>
                             <i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -558,7 +578,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="btn-more-box d-flex align-items-center">
+                        <div class="btn-more-box flex items-center">
                             <a href="#" class="btn-more">Подробнее</a>
                             <i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -588,15 +608,15 @@
                             <a class="anons-btn">Анонсы</a>
                         </div>
                         <div class="more-btns">
-                            <div class="btn-more-box d-flex align-items-center active">
+                            <div class="btn-more-box flex items-center active">
                                 <a href="#" class="btn-more">Все новости</a>
                                 <i class="bi bi-arrow-right-circle-fill"></i>
                             </div>
-                            <div class="btn-more-box d-flex align-items-center">
+                            <div class="btn-more-box flex items-center">
                                 <a href="#" class="btn-more">Все мероприятия</a>
                                 <i class="bi bi-arrow-right-circle-fill"></i>
                             </div>
-                            <div class="btn-more-box d-flex align-items-center">
+                            <div class="btn-more-box flex items-center">
                                 <a href="#" class="btn-more">Все анонсы</a>
                                 <i class="bi bi-arrow-right-circle-fill"></i>
                             </div>
@@ -981,7 +1001,7 @@
                     <p>
                         Здесь вы можете посмотреть все объекты университетского кампуса
                     </p>
-                    <div class="btn-more-box d-flex align-items-center">
+                    <div class="btn-more-box flex items-center">
                         <a href="#" class="btn-more">К карте</a>
                         <i class="bi bi-arrow-right-circle-fill"></i>
                     </div>
