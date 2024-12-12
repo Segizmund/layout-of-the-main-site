@@ -5,6 +5,7 @@ let navBar = document.querySelector('.navbar-collapse');
 let btnSearch = document.querySelectorAll('.btn-search');
 let searchBox = document.querySelector('.search-box');
 let closeSeachBox = document.querySelector('.close-search');
+let btnsFilterSearch = document.querySelectorAll('.btn-filter-search');
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
         menuPoints.forEach((point, index) => {
@@ -86,6 +87,12 @@ btnSearch.forEach((point, index) => {
         searchBox.classList.toggle('active');
         content.classList.toggle('opacit');
         document.body.classList.toggle('no-scroll');
+    });
+});
+btnsFilterSearch.forEach((point, index) => {
+    point.addEventListener('click', () => {
+        btnsFilterSearch.forEach(btn => btn.classList.remove('active'));
+        point.classList.add('active');
     });
 });
 closeSeachBox.addEventListener('click', () => {
