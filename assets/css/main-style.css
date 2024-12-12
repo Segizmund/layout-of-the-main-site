@@ -11,6 +11,14 @@
         font-family: "Montserrat", sans-serif;
     }
 }
+.doc-list{
+    a{
+        transition: var(--transition-link);
+    }
+    li:hover a{
+        opacity: 0.7;
+    }
+}
 a{
     text-decoration: none;
 }
