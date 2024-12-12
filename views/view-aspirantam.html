@@ -14,8 +14,8 @@
 <body>
 <div class="main-wrapper">
     <header>
-        <div class="upper-menu">
-            <div class="box-header-address">
+        <div class="upper-menu bg-[#FAFAFA] z-[82]">
+            <div class="box-header-address bg-[#FAFAFA] z-[82]">
                 <h2 class="header-address">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#820000" class="bi bi-geo-alt-fill me-2" viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -23,14 +23,40 @@
                     г. Мелитополь, пр. Б. Хмельницкого, д. 18
                 </h2>
             </div>
-            <div class="box-upper-nav">
+            <div class="box-upper-nav bg-[#FAFAFA] z-[82]">
                 <nav class="nav flex align-center">
                     <a class="nav-link" href="#">Студенту</a>
                     <a class="nav-link" href="#">Поступающим</a>
                     <a class="nav-link" href="../views/view-aspirantam.html">Аспирантам</a>
                     <a class="nav-link" href="#">Выпустникам</a>
                     <a class="nav-link" href="#">Партнерам</a>
+                    <a class="nav-link btn-search cursor-pointer flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </a>
                 </nav>
+            </div>
+
+        </div>
+        <div class="search-box py-6">
+            <div class="container custom">
+                <div class="search-and-close-box mb-8">
+                    <h2 class="p-0">Поиск</h2>
+                    <span class="close-search"><i class="bi bi-x-lg me-2"></i>Закрыть</span>
+                </div>
+                <form class="search-form mb-8">
+                    <input class="form-control rounded-none" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn rounded-none text-white" type="submit">
+                        Искать
+                    </button>
+                </form>
+                <div class="box-btns grid grid-cols-1 lg:grid-cols-[1fr,1fr,1fr,1fr] gap-3 text-center mb-8">
+                    <a class="btn-filter-search active uppercase py-[15px] px-[20px]">Искать везде</a>
+                    <a class="btn-filter-search uppercase py-[15px] px-[20px]">Новости</a>
+                    <a class="btn-filter-search uppercase py-[15px] px-[20px]">Структура сайта</a>
+                    <a class="btn-filter-search uppercase py-[15px] px-[20px]">Справочник</a>
+                </div>
             </div>
         </div>
         <div class="main-menu">
@@ -41,10 +67,15 @@
             </div>
             <div class="box-main-menu">
                 <nav class="navbar">
+                    <button class="btn-search bg-[var(--primary-color)] min-h-[38px] min-w-[38px] flex items-center justify-center absolute right-[55px] top-[13px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
                     <button class="navbar-toggler items-end rounded-0  border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="box-hamburg">
-                                        <i class="bi bi-list"></i>
-                                    </span>
+                        <span class="box-hamburg">
+                            <i class="bi bi-list"></i>
+                        </span>
                     </button>
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">
@@ -68,14 +99,6 @@
                             </li>
                         </ul>
                         <div class="search-and-btn-box">
-                            <form class="search-form">
-                                <input class="form-control rounded-none" type="search" placeholder="Поиск" aria-label="Search">
-                                <button class="btn rounded-none border-0" type="button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                    </svg>
-                                </button>
-                            </form>
                             <div class="personal-account-box">
                                 <button class="personal-account-btn flex align-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
@@ -362,11 +385,11 @@
         </div>
     </header>
     <section class="main-section">
-        <section class="container custom pt-5">
-            <div class="page-header pt-[9%] mb-5 xl:mb-20">
-                <div class="breadcrumbs flex">
+        <section class="container custom">
+            <div class="page-header pt-14 mb-5 xl:mb-14">
+                <div class="breadcrumbs flex mb-4">
                     <span class="crumb-home font-xs after:content-['\2192'] me-2 after:ms-2"><a href="/" class="font-xs">Главная</a></span>
-                    <span class="crumb font-xs"><a href="#" class="font-xs">Аспирантам</a></span>
+                    <span class="crumb font-xs"><a href="#" class="font-xs">Шаблон</a></span>
                 </div>
                 <h1 class="text-[32px] sm:text-[55px] font-bold">
                     Аспирантам
