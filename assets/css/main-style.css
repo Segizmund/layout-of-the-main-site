@@ -6,6 +6,20 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+/*style scroll*/
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #820000;
+    border-radius: 20px;
+    border: 3px solid #820000;
+}
+/*END style scroll*/
 .box-heading{
     h2{
         font-family: "Montserrat", sans-serif;
