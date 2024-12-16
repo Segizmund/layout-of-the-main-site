@@ -1121,6 +1121,21 @@ body{
         }
     }
 }
+@media screen and (max-width: 1280px){
+    .melsu-today-section {
+        .wrapper-info-box:last-child {
+            border-right: none !important;
+        }
+
+        .wrapper-info-box > .info-box:not(:last-child) {
+
+        }
+
+        .info-box {
+            border: 1px solid lightgray;
+        }
+    }
+}
 @media screen and (max-width: 1199px){
     .melsu-today-section {
         .wrapper-info-box:last-child {
@@ -1128,7 +1143,6 @@ body{
         }
 
         .wrapper-info-box > .info-box:not(:last-child) {
-            margin-bottom: 20px;
         }
 
         .info-box {
@@ -2374,3 +2388,124 @@ footer{
     transition: var(--transition-link);
 }
 /*END incoming page style*/
+
+/*news page style*/
+    /*data range picker style*/
+.daterangepicker .drp-calendar.right {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+.daterangepicker .drp-calendar.right tbody {
+    display: none !important;
+}
+
+.daterangepicker .drp-calendar.right thead > tr:nth-child(2) {
+    display: none !important;
+}
+
+.daterangepicker .drp-calendar.right th.month {
+    display: none !important;
+}
+
+.daterangepicker .drp-calendar.right .calendar-table {
+    background: transparent !important;
+}
+
+.daterangepicker .daterangepicker.ltr .ranges, .daterangepicker.ltr .drp-calendar {
+    float: none !important;
+}
+
+.daterangepicker .drp-calendar.right .daterangepicker_input {
+    position: absolute !important;
+}
+.drp-calendar.left .calendar-table{
+    padding-right: 0 !important;
+}
+.dataRange{
+    width: 100%;
+}
+.daterangepicker.ltr.show-calendar.openscenter{
+    width: 270px;
+}
+.drp-buttons{
+    display: flex !important;
+    justify-content: center !important;
+}
+.daterangepicker .drp-buttons .btn{
+    color: #4C4C4C !important;
+    background-color: #F0F0F0;
+}
+.drp-calendar.left{
+    padding-right: 10px !important;
+}
+.drp-selected{
+    display: none !important;
+}
+.daterangepicker td{
+    font-size: 12px !important;
+}
+
+.daterangepicker .calendar-table tr:nth-child(2) th{
+    font-weight: 500 !important;
+}
+td.today.active.start-date.active.end-date.available,
+.active.start-date.available,
+.active.end-date.in-range.available{
+    background-color: var(--primary-color);
+}
+    /*END data range picker style*/
+    /*search news style*/
+
+    /*END search news style*/
+.news-wrapper{
+    .first-news-box {
+        .img-news-box {
+            transition: var(--transition-link);
+        }
+    }
+    .first-news-box:hover{
+        .img-news-box{
+            opacity: 0.7;
+        }
+    }
+    .news-box{
+        cursor: pointer;
+        overflow: hidden;
+        .box-photo-news{
+            img{
+                transform: translateY(0%);
+                transition: transform .5s cubic-bezier(.645,.045,.355,1);
+            }
+        }
+        .descrip-box-news{
+            .descrip-wrapper {
+                transform: translateY(0%);
+                transition: transform .5s cubic-bezier(.645,.045,.355,1);
+                .description-news {
+                    transition: transform .5s cubic-bezier(.645, .045, .355, 1);
+                    transform: translateY(200%);
+                }
+            }
+        }
+    }
+    .news-box:hover{
+        .box-photo-news{
+            img{
+                transform: translateY(-100%);
+                transition: transform .5s cubic-bezier(.645,.045,.355,1);
+            }
+        }
+        .descrip-box-news{
+            .descrip-wrapper {
+                transform: translateY(-65%);
+                .description-news {
+                    transition: transform .5s cubic-bezier(.645, .045, .355, 1);
+                    transform: translateY(0%);
+                }
+            }
+        }
+    }
+}
+/*END news page style*/
