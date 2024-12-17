@@ -2259,7 +2259,7 @@ footer{
 
 /*wrapper news only news*/
 .box-nav-btns.only-news{
-    justify-content: end;
+
 }
 .wrapper-news.only-news{
     min-height: 374px !important;
