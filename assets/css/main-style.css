@@ -2458,6 +2458,14 @@ td.today.active.start-date.active.end-date.available,
     /*END data range picker style*/
     /*search news style*/
 
+.search-btn {
+    transition: var(--transition-link);
+}
+.search-field:focus + .search-btn {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    color: var(--primary-color);
+}
     /*END search news style*/
 .news-wrapper{
     .first-news-box {
@@ -2507,5 +2515,8 @@ td.today.active.start-date.active.end-date.available,
             }
         }
     }
+}
+.pagination a.current{
+    opacity: 0.8;
 }
 /*END news page style*/
