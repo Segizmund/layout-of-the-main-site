@@ -2520,3 +2520,6 @@ td.today.active.start-date.active.end-date.available,
     opacity: 0.8;
 }
 /*END news page style*/
+.under-list{
+    list-style-type: circle;
+}
