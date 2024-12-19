@@ -477,7 +477,7 @@ body{
             }
         }
         .navbar-collapse.opened{
-            height: 30%;
+            height: 45%;
         }
         .navbar-toggler{
             display: block;
