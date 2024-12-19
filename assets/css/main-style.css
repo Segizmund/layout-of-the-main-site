@@ -226,6 +226,7 @@ body{
         display: none;
     }
     .navbar-collapse{
+        z-index: 70;
         display: flex;
         justify-content: space-between;
         align-items: center;
