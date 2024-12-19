@@ -2531,3 +2531,23 @@ td.today.active.start-date.active.end-date.available,
         overflow: auto !important;
     }
 }
+/*single news page style*/
+.content-news{
+    p{
+        margin-bottom: 12px;
+        line-height: 2rem;
+        font-size: 18px;
+    }
+    img{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    ul{
+        font-size: 18px;
+        margin-bottom: 12px;
+        list-style: disc !important;
+        line-height: 2rem;
+        list-style-position: inside !important;
+    }
+}
+/*END single news page style*/
