@@ -2525,5 +2525,9 @@ td.today.active.start-date.active.end-date.available,
     list-style-type: circle;
 }
 .value-list{
-    transition: .3s ease-in-out;
+    transition: .3s ease-in-out !important;
+    &.open {
+        max-height: 320px !important;
+        overflow: auto !important;
+    }
 }
