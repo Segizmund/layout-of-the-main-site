@@ -2539,8 +2539,7 @@ td.today.active.start-date.active.end-date.available,
         font-size: 18px;
     }
     img{
-        margin-bottom: 12px;
-        width: 100%;
+        display: inline !important;
     }
     ul{
         font-size: 18px;
