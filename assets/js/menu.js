@@ -1,3 +1,4 @@
+if(document.querySelector('.main-menu')){
 let menuPoints = document.querySelectorAll('.point-menu');
 let dropDownMenus = document.querySelectorAll('.new-menu');
 let content = document.querySelector('.main-section');
@@ -169,7 +170,6 @@ function closeAllSearch () {
     }
     navBar.classList.remove('opened');
 }
-if(document.querySelector('.main-menu')){
 checkScreenWidth();
 window.addEventListener('resize', checkScreenWidth);
 }
