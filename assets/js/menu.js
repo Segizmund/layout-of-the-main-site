@@ -13,6 +13,7 @@ let navbarCollapseContent = document.querySelector('.navbar-collapse .navbar-nav
 let navbarCollapseHeight = navbarCollapseContent.getBoundingClientRect().height;
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
+        navBar.style.height = '110px';
         menuPoints.forEach((point, index) => {
             point.addEventListener('mouseover', () => {
                 if (dropDownMenus[index]) {
@@ -38,7 +39,6 @@ function checkScreenWidth() {
             }
         });
     } else {
-
         let hamburger = document.querySelector('.navbar-toggler');
         let backButtons = document.querySelectorAll('.back-btn');
         for (let i = 0; i < dropDownMenus.length; i++) {
@@ -120,6 +120,7 @@ closeSeachBox.addEventListener('click', () => {
         searchBox.classList.remove('active');
         content.classList.remove('opacit');
         document.body.classList.remove('no-scroll');
+        searchBox.style.height = '0px';
     }
 });
 document.addEventListener('click', (event) => {
@@ -127,6 +128,26 @@ document.addEventListener('click', (event) => {
         closeAllSearch();
     }
 });
+function resizeMenu () {
+    let searchContent = document.querySelector('.search-box .container');
+    let SearchHeight = searchContent.getBoundingClientRect().height;
+    if(searchBox.classList.contains('active')){
+        let searchBoxActive = document.querySelector('.search-box.active');
+        searchBoxActive.style.height = SearchHeight + 'px';
+    }
+    else{
+        searchBox.style.height = '0px';
+    }
+    let navbarCollapseContent = document.querySelector('.navbar-collapse .navbar-nav');
+    let navbarCollapseHeight = navbarCollapseContent.getBoundingClientRect().height;
+    if(navBar.classList.contains('opened')){
+        let navbarCollapseOpened = document.querySelector('.navbar-collapse.opened');
+        navbarCollapseOpened.style.height = navbarCollapseHeight + 56.5 + 'px';
+    }
+    else{
+        navBar.style.height = '0px';
+    }
+}
 function closeAllSearch () {
     if(searchBox.classList.contains('active')){
         searchBox.classList.remove('active');
