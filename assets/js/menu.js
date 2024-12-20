@@ -6,6 +6,11 @@ let btnSearch = document.querySelectorAll('.btn-search');
 let searchBox = document.querySelector('.search-box');
 let closeSeachBox = document.querySelector('.close-search');
 let btnsFilterSearch = document.querySelectorAll('.btn-filter-search');
+
+let searchContent = document.querySelector('.search-box .container');
+let SearchHeight = searchContent.getBoundingClientRect().height;
+let navbarCollapseContent = document.querySelector('.navbar-collapse .navbar-nav');
+let navbarCollapseHeight = navbarCollapseContent.getBoundingClientRect().height;
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
         menuPoints.forEach((point, index) => {
@@ -33,6 +38,7 @@ function checkScreenWidth() {
             }
         });
     } else {
+
         let hamburger = document.querySelector('.navbar-toggler');
         let backButtons = document.querySelectorAll('.back-btn');
         for (let i = 0; i < dropDownMenus.length; i++) {
@@ -52,6 +58,13 @@ function checkScreenWidth() {
             navBar.classList.toggle('opened');
            document.body.classList.toggle('no-scroll');
             content.classList.toggle('opacit');
+            if(navBar.classList.contains('opened')){
+                let navbarCollapseOpened = document.querySelector('.navbar-collapse.opened');
+                navbarCollapseOpened.style.height = navbarCollapseHeight + 56.5 + 'px';
+            }
+            else{
+                navBar.style.height = '0px';
+            }
            for (let i = 0; i < dropDownMenus.length; i++) {
                if (dropDownMenus[i]) {
                    dropDownMenus[i].classList.remove('opened');
@@ -87,6 +100,13 @@ btnSearch.forEach((point, index) => {
         searchBox.classList.toggle('active');
         content.classList.toggle('opacit');
         document.body.classList.toggle('no-scroll');
+        if(searchBox.classList.contains('active')){
+            let searchBoxActive = document.querySelector('.search-box.active');
+            searchBoxActive.style.height = SearchHeight + 'px';
+        }
+        else{
+            searchBox.style.height = '0px';
+        }
     });
 });
 btnsFilterSearch.forEach((point, index) => {
@@ -107,7 +127,6 @@ document.addEventListener('click', (event) => {
         closeAllSearch();
     }
 });
-
 function closeAllSearch () {
     if(searchBox.classList.contains('active')){
         searchBox.classList.remove('active');
