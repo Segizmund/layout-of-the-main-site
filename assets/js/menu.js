@@ -11,6 +11,8 @@ let searchContent = document.querySelector('.search-box .container');
 let SearchHeight = searchContent.getBoundingClientRect().height;
 let navbarCollapseContent = document.querySelector('.navbar-collapse .navbar-nav');
 let navbarCollapseHeight = navbarCollapseContent.getBoundingClientRect().height;
+let underNavBarContent = document.querySelector('.navbar-collapse .under-navbar-nav');
+let underNavBarHeight = underNavBarContent.getBoundingClientRect().height;
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
         navBar.style.height = '110px';
@@ -60,7 +62,8 @@ function checkScreenWidth() {
             content.classList.toggle('opacit');
             if(navBar.classList.contains('opened')){
                 let navbarCollapseOpened = document.querySelector('.navbar-collapse.opened');
-                navbarCollapseOpened.style.height = navbarCollapseHeight + 56.5 + 'px';
+                navbarCollapseOpened.style.height = navbarCollapseHeight + underNavBarHeight + 56.5 + 'px';
+                searchBox.style.height = '0px';
             }
             else{
                 navBar.style.height = '0px';
@@ -100,12 +103,17 @@ btnSearch.forEach((point, index) => {
         searchBox.classList.toggle('active');
         content.classList.toggle('opacit');
         document.body.classList.toggle('no-scroll');
-        if(searchBox.classList.contains('active')){
+        if(searchBox.classList.contains('active') && window.matchMedia("(min-width: 1025px)").matches){
             let searchBoxActive = document.querySelector('.search-box.active');
-            searchBoxActive.style.height = SearchHeight + 'px';
+            searchBoxActive.style.height = 311 + 'px';
         }
         else{
             searchBox.style.height = '0px';
+        }
+        if(searchBox.classList.contains('active') && window.matchMedia("(max-width: 1024px)").matches){
+            let searchBoxActive = document.querySelector('.search-box.active');
+            searchBoxActive.style.height = SearchHeight + 'px';
+            navBar.style.height = '0px';
         }
     });
 });
@@ -161,5 +169,7 @@ function closeAllSearch () {
     }
     navBar.classList.remove('opened');
 }
+if(document.querySelector('.main-menu')){
 checkScreenWidth();
 window.addEventListener('resize', checkScreenWidth);
+}

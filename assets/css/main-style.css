@@ -479,6 +479,18 @@ body{
                     }
                 }
             }
+            .under-navbar-nav{
+                & li:first-child{
+                    padding-top: 5px;
+                }
+                & li{
+
+                    a{
+                        color: #820000BD;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
         }
         .navbar-collapse.opened{
             height: 45%;
@@ -522,7 +534,9 @@ body{
             }
         }
         .personal-account-box{
+            height: auto;
             .personal-account-btn{
+                height: auto;
                 padding: 8px 10px;
                 background: none;
                 color: var(--primary-color);
@@ -538,6 +552,7 @@ body{
 
         }
         .search-and-btn-box{
+            height: auto;
             width: 100%;
             margin-right: 0;
             flex-direction: column-reverse;
