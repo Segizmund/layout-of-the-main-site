@@ -760,8 +760,8 @@
         <div class="box-heading container custom">
             <h2 class="font-bold text-2xl mt-12 mb-6">Программы обучения</h2>
         </div>
-        <section class="card-section container custom p-2.5">
-            <div class="grid grid-cols-1 lg:grid-cols-[65%,25%] xl:grid-cols-[45%,20%] gap-[12px] lg:gap-[10%] xl:gap-[35%] mb-3 lg:mb-0">
+        <section class="card-section container custom p-2.5 xl:p-0">
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr,20%,20%] gap-[12px]  lg:gap-3 mb-3 lg:mb-0">
                 <div class="box-btns-card grid grid-cols-1 lg:grid-cols-[1fr,1fr,1fr] gap-3 text-center lg:mb-8">
                     <a class="btn-filter-card active uppercase py-[15px] px-[20px]">Все</a>
                     <a class="btn-filter-card uppercase py-[15px] px-[20px]">Колледжи</a>
@@ -770,16 +770,19 @@
                     <a class="btn-filter-card uppercase py-[15px] px-[20px]">Магистратура</a>
                     <a class="btn-filter-card uppercase py-[15px] px-[20px]">Аспирантура</a>
                 </div>
-                <div class="flex flex-col max-h-[112px]">
-                    <select class="dropdown-list mb-[12px]" name="form-edu">
+                <div>
+                    <input  type="text" id="search-in-box" class="w-[100%] border-[1px] p-[12px]" placeholder="Поиск">
+                </div>
+                <div class="flex flex-col w-full">
+                    <select class="dropdown-list mb-[12px] w-full" name="form-edu">
                         <option>Форма обучения</option>
                     </select>
                 </div>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-[1fr,1fr] xl:grid-cols-[1fr,1fr,1fr] gap-3">
-                <div class="card-naprav p-2.5 text-white">
+            <div class="parent grid grid-cols-1 lg:grid-cols-[1fr,1fr] xl:grid-cols-[1fr,1fr,1fr] gap-3">
+                <div class="box-searching card-naprav p-2.5 text-white">
                     <a href="#">
-                        <h2 class="text-xl font-[600]">44.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
+                        <h2 class="text-xl font-[600] name"><span class="spu">43.03.05</span> – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
                         <div class="flex flex-col">
                             <span class="font-[400]">400 тыс</span>
                             <span class="font-[400]">Стоимость в год</span>
@@ -796,9 +799,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="card-naprav p-2.5 text-white">
+                <div class="box-searching card-naprav p-2.5 text-white">
                     <a href="#">
-                        <h2 class="text-xl font-[600]">44.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
+                        <h2 class="text-xl font-[600] name">44.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
                         <div class="flex flex-col">
                             <span class="font-[400]">400 тыс</span>
                             <span class="font-[400]">Стоимость в год</span>
@@ -815,9 +818,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="card-naprav p-2.5 text-white">
+                <div class="box-searching card-naprav p-2.5 text-white">
                     <a href="#">
-                        <h2 class="text-xl font-[600]">44.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
+                        <h2 class="text-xl font-[600] name">45.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
                         <div class="flex flex-col">
                             <span class="font-[400]">400 тыс</span>
                             <span class="font-[400]">Стоимость в год</span>
@@ -834,9 +837,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="card-naprav p-2.5 text-white">
+                <div class="box-searching card-naprav p-2.5 text-white">
                     <a href="#">
-                        <h2 class="text-xl font-[600]">44.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
+                        <h2 class="text-xl font-[600] name">46.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
                         <div class="flex flex-col">
                             <span class="font-[400]">400 тыс</span>
                             <span class="font-[400]">Стоимость в год</span>
@@ -853,9 +856,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="card-naprav p-2.5 text-white">
+                <div class="box-searching card-naprav p-2.5 text-white">
                     <a href="#">
-                        <h2 class="text-xl font-[600]">44.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
+                        <h2 class="text-xl font-[600] name">47.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
                         <div class="flex flex-col">
                             <span class="font-[400]">400 тыс</span>
                             <span class="font-[400]">Стоимость в год</span>
@@ -872,9 +875,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="card-naprav p-2.5 text-white">
+                <div class="box-searching card-naprav p-2.5 text-white">
                     <a href="#">
-                        <h2 class="text-xl font-[600]">44.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
+                        <h2 class="text-xl font-[600] name">48.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
                         <div class="flex flex-col">
                             <span class="font-[400]">400 тыс</span>
                             <span class="font-[400]">Стоимость в год</span>
@@ -1084,5 +1087,6 @@
 <script src="../assets/js/news-section-main-page.js"></script>
 <script src="../assets/js/counter-script.js"></script>
 <script src="../assets/js/filter-card.js"></script>
+<script src="../assets/js/search-in-box.js"></script>
 </body>
 </html>
