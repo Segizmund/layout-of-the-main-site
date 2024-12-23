@@ -773,16 +773,23 @@
                 <div>
                     <input  type="text" id="search-in-box" class="w-[100%] border-[1px] p-[12px]" placeholder="Поиск">
                 </div>
-                <div class="flex flex-col w-full">
-                    <select class="dropdown-list mb-[12px] w-full" name="form-edu">
-                        <option>Форма обучения</option>
-                    </select>
+                <div class="select-wrapper relative">
+                    <input type="text" class="input-hidden hidden">
+                    <input class="chosen-value relative top-0 left-0 w-full min-h-[48px] max-h-[48px] text-lg py-3 px-[18px] bg-white
+                             transition duration-300 ease-in-out placeholder:text-[black] focus:border-b-[2px] outline-0 z-20" type="text" value="" placeholder="Форма обучения">
+                    <ul class="value-list transition duration-300 ease-in-out absolute top-0 left-0 w-full max-h-0 cursor-pointer list-none mt-[48px] shadow-[2px_24px_17px_-13px_rgba(66, 68, 90, 1)] overflow-hidden
+                [&.open]:max-h-[320px] [&.open]:overflow-auto z-20">
+                        <li data-id="1" class="drop-li min-h-[4rem] opacity-1 relative p-[1rem] bg-white text-lg flex items-center cursor-pointer transition duration-300 ease-in-out max-h-0 hover:bg-[#820000] hover:text-white
+                                [&.closed]:max-h-0 [&.closed]:overflow-hidden [&.closed]:p-0 [&.closed]:opacity-0 [&.closed]:min-h-[0px]">Очная</li>
+                        <li data-id="2" class="drop-li min-h-[4rem] relative p-[1rem] bg-white text-lg flex items-center cursor-pointer transition duration-300 ease-in-out max-h-0 hover:bg-[#820000] hover:text-white
+                                [&.closed]:max-h-0 [&.closed]:overflow-hidden [&.closed]:p-0 [&.closed]:opacity-0 [&.closed]:min-h-[0px]">Заочная</li>
+                    </ul>
                 </div>
-            </div>
+                </div>
             <div class="parent grid grid-cols-1 lg:grid-cols-[1fr,1fr] xl:grid-cols-[1fr,1fr,1fr] gap-3">
                 <div class="box-searching card-naprav p-2.5 text-white">
                     <a href="#">
-                        <h2 class="text-xl font-[600] name"><span class="spu">43.03.05</span> – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
+                        <h2 class="text-xl font-[600] name">43.03.05 – Педагогическое образование (с двумя профилями подготовки) (География. Физическая культура)</h2>
                         <div class="flex flex-col">
                             <span class="font-[400]">400 тыс</span>
                             <span class="font-[400]">Стоимость в год</span>
@@ -1088,5 +1095,6 @@
 <script src="../assets/js/counter-script.js"></script>
 <script src="../assets/js/filter-card.js"></script>
 <script src="../assets/js/search-in-box.js"></script>
+<script src="../assets/js/select-component.js"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 function initSelect(selectWrapper) {
-    const inputField = selectWrapper.querySelector('.chosen-value');
-    const inputHiddenField = selectWrapper.querySelector('.input-hidden');
-    const dropdown = selectWrapper.querySelector('.value-list');
-    const dropdownItems = [...dropdown.querySelectorAll('.drop-li')];
+    let inputField = selectWrapper.querySelector('.chosen-value');
+    let inputHiddenField = selectWrapper.querySelector('.input-hidden');
+    let dropdown = selectWrapper.querySelector('.value-list');
+    let dropdownItems = [...dropdown.querySelectorAll('.drop-li')];
 
     const filterItems = (inputValue) => {
         dropdownItems.forEach(item => {
@@ -36,6 +36,6 @@ function initSelect(selectWrapper) {
         dropdown.classList.remove('open');
     });
 }
-
-const selectWrappers = document.querySelectorAll('.select-wrapper');
+console.log('123')
+let selectWrappers = document.querySelectorAll('.select-wrapper');
 selectWrappers.forEach(initSelect);
