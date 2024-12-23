@@ -2570,3 +2570,16 @@ td.today.active.start-date.active.end-date.available,
     }
 }
 /*END single news page style*/
+
+/*abiturient page style*/
+.abit-main-box{
+    min-height: calc(100vh - 159px);
+    height: calc(100vh - 159px);
+}
+@media screen and (max-width: 1023px){
+    .abit-main-box {
+        height: 100%;
+        min-height: auto;
+    }
+}
+/*END abiturient page style*/
