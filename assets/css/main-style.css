@@ -2383,6 +2383,17 @@ footer{
 }
 .container-with-logo{
     transition: var(--transition-link);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url("../img/bg-black-logo.png");
+}
+.btn-show-filter{
+    transition: var(--transition-link);
+}
+.box-show-filter{
+    transition: var(--transition-link);
+}
+.box-show-filter.hidde{
+    display: none;
 }
 .card-section {
     .box-btns-card {
@@ -2395,7 +2406,7 @@ footer{
             background-color: #252422;
             transition: var(--transition-link);
             border: 1px solid #252422;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
         }
 
         .btn-filter-card.active, .btn-filter-card:hover {
@@ -2414,19 +2425,28 @@ footer{
 .card-naprav{
     transition: var(--transition-link);
     display: flex;
-    background-color: var(--primary-color);
+    background-color: white;
     min-height: 340px;
     & a{
-        background-image: url("../img/symbol-on-card.png");
-        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-height: 100%;
+        p{
+            color: #BBBBBB;
+        }
+        h2{
+            color: var(--primary-color);
+        }
     }
 }
 .card-naprav:hover{
     background-color: var(--secondary-color);
+    & a{
+        & *{
+            color: #FFFFFF;
+        }
+    }
 }
 .jst-block{
     transition: var(--transition-link);

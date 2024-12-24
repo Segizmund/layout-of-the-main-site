@@ -1,5 +1,8 @@
 if(document.querySelectorAll('.btn-filter-card')){
     var btnFilterCard = document.querySelectorAll('.btn-filter-card');
+    var btnShowFilter = document.querySelector('.btn-show-filter');
+    var filterShowBox = document.querySelector('.box-show-filter');
+    var  filterSelectBox= document.querySelector('.filters-select-box');
 }
 btnFilterCard.forEach((point, index) => {
     point.addEventListener('click', () => {
@@ -7,3 +10,8 @@ btnFilterCard.forEach((point, index) => {
         point.classList.add('active');
     });
 });
+btnShowFilter.addEventListener('click', () =>{
+    filterShowBox.classList.add('hidde');
+    filterSelectBox.classList.remove('hidden');
+
+})
