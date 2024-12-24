@@ -2383,8 +2383,6 @@ footer{
 }
 .container-with-logo{
     transition: var(--transition-link);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url("../img/bg-black-logo.png");
 }
 .btn-show-filter{
     transition: var(--transition-link);
