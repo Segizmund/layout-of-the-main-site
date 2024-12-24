@@ -2302,10 +2302,17 @@ footer{
 .incoming-main-box {
     min-height: calc(100vh - 159px);
     height: calc(100vh - 159px);
-    @media screen and (max-height: 962px) {
-        .info-incoming-box{
-            min-height: calc(100vh - 159px);
-            height: calc(100vh - 159px);
+    @media screen and (max-height: 1100px) {
+        min-height: 985px;
+        .wrapper-incoming-main-content {
+            min-height: 985px;
+            height: 100vh;
+            .info-incoming-box {
+                padding-top: 5%;
+            }
+            .box-incoming-block{
+                bottom: -210px;
+            }
         }
         height: 100vh;
     }
@@ -2373,6 +2380,9 @@ footer{
         opacity: 0.9;
         transform: translateY(-10px);
     }
+}
+.container-with-logo{
+    transition: var(--transition-link);
 }
 .card-section {
     .box-btns-card {

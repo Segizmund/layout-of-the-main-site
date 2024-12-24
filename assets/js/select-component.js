@@ -32,7 +32,7 @@ function initSelect(selectWrapper) {
     });
 
     inputField.addEventListener('blur', () => {
-        inputField.placeholder = 'Выберите категорию';
+        inputField.placeholder = inputField.getAttribute('data-placeholder');
         dropdown.classList.remove('open');
     });
 }

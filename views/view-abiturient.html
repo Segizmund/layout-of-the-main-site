@@ -504,7 +504,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[var(--primary-color)] mt-6 lg:mt-[230px] mb-12">
+        <section class="info-how-proceed bg-[var(--primary-color)] mt-6 lg:mt-[230px] mb-12">
             <div class="container custom lg:px-[100px] lg:py-[50px]">
                 <h2 class="font-bold text-[20px] sm:text-[32px] text-white mb-3">Как поступить в МелГУ</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-[45%,45%] gap-3 lg:gap-x-[10%] lg:gap-y-12 lg:mx-auto">
@@ -678,32 +678,33 @@
         </section>
         <section>
             <div class="container custom">
-                <div class="bg-white bg-[url('../assets/img/bg-logo.png')] bg-no-repeat bg-[97%] bg-[length:340px_290px] p-6 min-h-[339px] flex flex-col justify-between">
+                <div class="container-with-logo bg-white bg-[url('../assets/img/bg-logo.png')] bg-no-repeat bg-[97%] lg:bg-[111%_266%] bg-[length:340px_290px] p-6 min-h-[339px] flex flex-col justify-between
+                            hover:lg:bg-[108%_177%]">
                     <div>
                         <h2 class="text-2xl font-[700] mb-3">Поступление в университет</h2>
-                        <div class="grid grid-cols-1 lg:grid-cols-[1fr,1fr,1fr] gap-3 lg:w-[40%]">
+                        <div class="grid grid-cols-1 lg:grid-cols-[1fr,1fr,1fr] gap-3 lg:w-[70%]">
                             <div>
-                                <span class="text-[var(--secondary-color)]">
+                                <span class="text-[var(--secondary-color)] hover:opacity-80 transition duration-300 ease-linear">
                                     <a href="#">Подготовка к поступлению</a>
                                 </span>
                             </div>
                             <div>
-                                <span class="text-[var(--secondary-color)]">
+                                <span class="text-[var(--secondary-color)] hover:opacity-80 transition duration-300 ease-linear">
                                     <a href="#">Рейтинг абитуриентов</a>
                                 </span>
                             </div>
                             <div>
-                                <span class="text-[var(--secondary-color)]">
+                                <span class="text-[var(--secondary-color)] hover:opacity-80 transition duration-300 ease-linear">
                                     <a href="#">Стоимость обучения</a>
                                 </span>
                             </div>
                             <div>
-                                <span class="text-[var(--secondary-color)]">
+                                <span class="text-[var(--secondary-color)] hover:opacity-80 transition duration-300 ease-linear">
                                     <a href="#">Прием 2025</a>
                                 </span>
                             </div>
                             <div>
-                                <span class="text-[var(--secondary-color)]">
+                                <span class="text-[var(--secondary-color)] hover:opacity-80 transition duration-300 ease-linear">
                                     <a href="#">Правила приема</a>
                                 </span>
                             </div>
@@ -776,7 +777,7 @@
                 <div class="select-wrapper relative">
                     <input type="text" class="input-hidden hidden">
                     <input class="chosen-value relative top-0 left-0 w-full min-h-[48px] max-h-[48px] text-lg py-3 px-[18px] bg-white
-                             transition duration-300 ease-in-out placeholder:text-[black] focus:border-b-[2px] outline-0 z-20" type="text" value="" placeholder="Форма обучения">
+                             transition duration-300 ease-in-out placeholder:text-[black] focus:border-b-[2px] outline-0 z-20" type="text" value="" data-placeholder="Форма обучения" placeholder="Форма обучения">
                     <ul class="value-list transition duration-300 ease-in-out absolute top-0 left-0 w-full max-h-0 cursor-pointer list-none mt-[48px] shadow-[2px_24px_17px_-13px_rgba(66, 68, 90, 1)] overflow-hidden
                 [&.open]:max-h-[320px] [&.open]:overflow-auto z-20">
                         <li data-id="1" class="drop-li min-h-[4rem] opacity-1 relative p-[1rem] bg-white text-lg flex items-center cursor-pointer transition duration-300 ease-in-out max-h-0 hover:bg-[#820000] hover:text-white
