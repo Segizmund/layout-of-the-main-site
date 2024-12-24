@@ -13,5 +13,4 @@ btnFilterCard.forEach((point, index) => {
 btnShowFilter.addEventListener('click', () =>{
     filterShowBox.classList.add('hidde');
     filterSelectBox.classList.remove('hidden');
-
 })
