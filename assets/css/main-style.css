@@ -2423,7 +2423,7 @@ footer{
     display: flex;
     overflow: hidden;
     position: relative;
-    min-height: 340px;
+    min-height: 300px;
    & a{
        display: flex;
        flex-direction: column;
