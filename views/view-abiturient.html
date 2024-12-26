@@ -13,6 +13,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="../assets/css/slider-bg-style.css">
     <title>Абитуриентам</title>
 </head>
 <body>
@@ -409,9 +410,18 @@
         </div>
     </header>
     <section class="main-section">
-        <section class="incoming-main-box abit-main-box  relative bg-[url('../assets/img/bg-abit.png')]   object-contain bg-cover bg-top bg-no-repeat">
+        <section class="incoming-main-box max-h-[1241px] abit-main-box  relative bg-[#820000] object-contain bg-cover bg-top bg-no-repeat">
+            <div class="background-slider">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
             <div class="overlay-incoming"></div>
-            <div class="wrapper-incoming-main-content container custom p-2.5 relative lg:min-h-[100vh] flex flex-col justify-between">
+            <div class="wrapper-incoming-main-content container custom p-2.5 relative h-[100%] flex flex-col justify-between">
                 <div class="info-incoming-box w-full pt-[15%] text-white">
                     <div class="">
                         <h2 class="text-2xl font-[700] mb-20 uppercase">Поступающим</h2>
@@ -444,7 +454,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="box-incoming-block lg:relative lg:bottom-[-50px] grid grid-cols-1 lg:grid-cols-[1fr,1fr] gap-3 lg:gap-0">
+                <div class="box-incoming-block lg:relative lg:bottom-[-210px] grid grid-cols-1 lg:grid-cols-[1fr,1fr] gap-3 lg:gap-0">
                     <div class="bg-[#252422] p-6 min-h-[350px] flex flex-col justify-between">
                         <div class="flex justify-between flex-col sm:flex-row">
                             <h2 class="text-xl font-[700] text-white mb-4 w-[100%] sm:w-[35%]">
@@ -1070,8 +1080,79 @@
             </div>
         </section>
     </section>
-    <footer>
-        <div class="header-footer">
+    <footer class="py-6">
+        <div class="container custom lg:p-2.5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[var(--primary-color)]">
+                <div class="grid grid-cols-1">
+                    <h4 class="text-[#4C4C4C] text-md font-[500] mb-3">Приемная ректора</h4>
+                    <a href="tel:79901469279" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 146-92-79</a>
+                    <a href="mailto:rektorat@mgu-mlt.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">rektorat@mgu-mlt.ru</a>
+                    <h4 class="text-[#4C4C4C] text-md font-[500] my-3">Для писем</h4>
+                    <a href="mailto:rektorat@mgu-mlt.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">rektorat@mgu-mlt.ru</a>
+                </div>
+                <div class="grid grid-cols-1">
+                    <h4 class="text-[#4C4C4C] text-md font-[500] mb-3">Приемная комиссия</h4>
+                    <a href="tel:79900215716" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 021-57-16</a>
+                    <a href="mailto:priyomnaya_komissiya@mgu-mlt.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">priyomnaya_komissiya@mgu-mlt.ru</a>
+                    <a href="https://yandex.ru/maps/10367/melitopol/house/prospekt_bogdana_khmelnitskogo_18/Z0wYdQBjS0QFQFpsfXR1d35iZQ==/?ll=35.373212%2C46.846212&z=17" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">г. Мелитополь, пр. Богдана Хмельницкого 18, аудитория: 1.116</a>
+                </div>
+                <div class="grid grid-cols-1">
+                    <h4 class="text-[#4C4C4C] text-md font-[500] mb-3">Пресс-служба</h4>
+                    <a href="tel:79901427865" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 142-78-65</a>
+                    <a href="mailto:example@mail.ru" class="text-lg font-[600] text-[var(--primary-color)] mb-2 hover:opacity-80 transition duration-300 ease-linear">example@mail.ru</a>
+                    <a href="https://yandex.ru/maps/10367/melitopol/house/prospekt_bogdana_khmelnitskogo_18/Z0wYdQBjS0QFQFpsfXR1d35iZQ==/?ll=35.373212%2C46.846212&z=17" class="text-lg font-[600] text-[var(--primary-color)] mb-2 hover:opacity-80 transition duration-300 ease-linear">г. Мелитополь, пр. Богдана Хмельницкого 18, аудитория: 1.116</a>
+                </div>
+                <div class="grid grid-cols-1">
+                    <h4 class="text-[#4C4C4C] text-md font-[500] mb-3">Приемная ректора</h4>
+                    <a href="tel:799000000" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 000-00-00</a>
+                    <a href="mailto:example@mail.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">example@mail.ru</a>
+                    <h4 class="text-[#4C4C4C] text-md font-[500] my-3">Для писем</h4>
+                    <a href="mailto:example@mail.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">example@mail.ru</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center relative mt-2 mb-4
+                        before:content-[''] before:absolute before:top-[50%] before:left-0 before:w-[46%] before:h-[1px] before:bg-[var(--primary-color)]
+                        after:content-[''] after:absolute after:top-[50%] after:right-0 after:w-[46%] after:h-[1px] after:bg-[var(--primary-color)]">
+                <div class="max-w-[35px] max-h-[44px]">
+                    <a href="#">
+                        <img src="../assets/img/bg-black-logo.png" alt="Логотип университета">
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 text-center text-[var(--primary-color)] mb-4">
+                <h4 class="text-lg font-[600] mb-2">Название юридического лица из ЕГРЮЛ:</h4>
+                <p class="uppercase sm:text-lg font-[600] mb-2">
+                    Федеральное государственное бюджетное образовательное учреждение высшего образования «Мелитопольский государственный университет»
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[var(--primary-color)]">
+                <div class="grid grid-cols-1">
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                </div>
+                <div class="grid grid-cols-1">
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                </div>
+                <div class="grid grid-cols-1">
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                </div>
+                <div class="grid grid-cols-1">
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                    <a href="#" class="text-md font-[600] mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                </div>
+            </div>
+        </div>
+        <!--<div class="header-footer">
             <div class="upper-footer-box">
                 <div class="box-logo">
                     <a href="#">
@@ -1151,7 +1232,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </footer>
     <div class="side_offset">
         <ul class="box-side-social-link">
@@ -1177,5 +1258,6 @@
 <script src="../assets/js/search-in-box.js"></script>
 <script src="../assets/js/select-component.js"></script>
 <script src="../assets/js/aware-button-animaton.js"></script>
+<script src="../assets/js/slider-bg.js"></script>
 </body>
 </html>
