@@ -2427,7 +2427,6 @@ footer{
    & a{
        display: flex;
        flex-direction: column;
-       justify-content: space-between;
        min-height: 100%;
        p{
            color: #BBBBBB;
@@ -2439,7 +2438,7 @@ footer{
     &.position-aware {
         a{
             background-color: #FFFFFF;
-            p,h2,span{
+            p,h2,span,div{
                 transition: all .8s linear;
                 z-index: 1;
             }
@@ -2474,6 +2473,7 @@ footer{
             }
         }
     }
+    @media
 }
 .card-naprav{
     transition: var(--transition-link);

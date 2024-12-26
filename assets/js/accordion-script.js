@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             height[index] = rect[index].height;
             height[index] += parseInt(defaultHeight[index]);
-
+            accordionBox[index].style.height = defaultHeight[index] + 'px';
             window.addEventListener('resize', () => {
                 newWidth[index] = accordionItems[0].offsetWidth;
                 accordionContentBox[index].style.width = newWidth[index] + 'px';
                 rect[index] = accordionText[index].getBoundingClientRect();
                 height[index] = 0;
-                height[index] = rect[index].height + 75;
+                height[index] = rect[index].height + parseInt(defaultHeight[index]);
             });
             item.addEventListener('click', function () {
                 const content = accordionContentBox[index];
@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (content.classList.contains('show')) {
                     accordionBox[index].classList.add('show');
                     accordionBox[index].style.height = height[index] + 'px';
-                    console.log(height[index]);
                     accordionArrow[index].style.transform = 'rotateZ(180deg)';
                 } else {
                     accordionBox[index].classList.remove('show');
