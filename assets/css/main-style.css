@@ -2473,7 +2473,36 @@ footer{
             }
         }
     }
-    @media
+}
+.btn-info-prog.active:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #FFFFFF;
+    bottom: -5px;
+    left: 0;
+    z-index: 20;
+    @media screen and (max-width: 639px){
+        height: 0;
+    }
+}
+.btn-info-prog{
+    position: relative;
+    border: 2px solid white;
+}
+.btn-info-prog.active{
+    border: 2px solid var(--primary-color);
+}
+.content-info-prog {
+    transition: var(--transition-link);
+    border: 2px solid white;
+}
+.content-info-prog.active{
+    border: 2px solid var(--primary-color);
+    @media screen and (max-width: 639px){
+        border: 2px solid white;
+    }
 }
 .card-naprav{
     transition: var(--transition-link);
@@ -2666,7 +2695,3 @@ td.today.active.start-date.active.end-date.available,
     }
 }
 /*END single news page style*/
-
-/*abiturient page style*/
-
-/*END abiturient page style*/
