@@ -2844,6 +2844,10 @@ td.today.active.start-date.active.end-date.available,
 .timeline-carousel .slick-active .media-wrapper {
     opacity: 1 !important;
 }
+.slick-arrow{
+    visibility: hidden;
+    font-size: 1px;
+}
 .slick-dots {
     bottom: 60px;
     list-style: none;
@@ -2857,8 +2861,8 @@ td.today.active.start-date.active.end-date.available,
     display: inline-block;
     margin: 0 6px;
     position: relative;
-    width: 10px;
-    height: 10px;
+    width: 1px;
+    height: 1px;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -2948,8 +2952,15 @@ td.today.active.start-date.active.end-date.available,
         flex-direction: column;
         row-gap: 10px;
     }
+    .timeline-carousel__item .media-wrapper{
+        padding-bottom: 67%;
+    }
     .media-wrapper.media-wrapper--overlay{
+        display: none;
+    }
+    .media-wrapper.media-wrapper--overlay.main-media-wrapper{
         width: 100%;
+        display: block;
     }
 }
 
@@ -3261,6 +3272,18 @@ td.today.active.start-date.active.end-date.available,
         -ms-transform: translateX(0%);
         -o-transform: translateX(0%);
         transform: translateX(0%);
+    }
+}
+.btn-navigation-timeline{
+    display: none;
+}
+@media screen and (max-width: 520px){
+    .btn-navigation-timeline{
+        display: flex;
+        justify-content: end;
+    }
+    .cd-horizontal-timeline{
+        display: none;
     }
 }
 /*END timeline bar style*/

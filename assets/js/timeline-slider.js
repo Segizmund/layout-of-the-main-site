@@ -3,27 +3,9 @@ $.js = function (el) {
 };
 
 function carousel() {
-    $('.time-nav').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: '[data-js="timeline-carousel"]',
-        dots: false,
-        arrows: false,
-        centerMode: false,
-        focusOnSelect: true,
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-    });
     $.js('timeline-carousel').slick({
         infinite: false,
-        arrows: false,
+        arrows: true,
         dots: true,
         autoplay: false,
         speed: 1100,
@@ -32,7 +14,7 @@ function carousel() {
         draggable: false,
         responsive: [
             {
-                breakpoint: 800,
+                breakpoint: 520,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -243,6 +225,14 @@ jQuery(document).ready(function($){
             console.error("err");
         }
     });
+
+    let $navTimelinePrev = $('.nav-btn-timeline li a.prev');
+    let $navTimelineNext = $('.nav-btn-timeline li a.next');
+
+    let $slickPrev = $('.slick-prev');
+    let $slickNext = $('.slick-next');
+    $navTimelinePrev.on('click', function (e){$slickPrev.click();});
+    $navTimelineNext.on('click', function (e){$slickNext.click();});
 
 });
 carousel();
