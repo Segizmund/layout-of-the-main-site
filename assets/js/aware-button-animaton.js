@@ -15,7 +15,7 @@ positionAwareElements.forEach(element => {
         const relativeX = event.clientX - elementRect.left;
         const relativeY = event.clientY - elementRect.top;
         const span = element.querySelector('.aware-bg');
-        span.style.top = `${relativeY}px`;
+        span.style.top = `${relativeY }px`;
         span.style.left = `${relativeX}px`;
     });
 });
