@@ -1396,8 +1396,42 @@ body{
     background: var(--primary-color);
     color: #FFFFFF;
 }
-@media screen and (max-width: 1279px){
-    
+@media screen and (max-width: 1280px){
+    #melsu-today{
+        margin-top: 25px !important;
+    }
+    .custom-select-trigger,.custom-option{
+        line-height: 50px;
+        font-size: 14px;
+    }
+    .custom-select-trigger{
+        padding-right: 40px;
+        width: 330px;
+    }
+}
+@media screen and (max-width: 1242px){
+    .custom-select-trigger{
+        padding-right: 39px;
+        width: 314px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .custom-select-trigger{
+      width: 270px;
+    }
+    .custom-select-trigger,.custom-option{
+        line-height: 30px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+@media screen and (max-width: 991px){
+    .custom-select-nav{
+        display: none;
+    }
+    #melsu-today{
+        margin-top: 0px !important;
+    }
 }
 /*END Custom Select */
 
