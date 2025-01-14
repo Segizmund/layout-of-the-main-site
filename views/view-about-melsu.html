@@ -420,9 +420,20 @@
                 <h1 class="text-xl sm:text-4xl font-bold">
                     О МелГУ
                 </h1>
+                <div class="center">
+                    <select name="sources" id="sources" class="custom-select sources" placeholder="Навигация">
+                        <option value="#melsu-today"><a href="#melsu-today">МелГУ сегодня - это</a></option>
+                        <option value="#history-melsy"><a href="#history-melsy">История МелГУ</a></option>
+                        <option value="#cooperation-melsu"><a href="#cooperation-melsu">Международное сотрудничество</a></option>
+                        <option value="#education-melsu"><a href="#education-melsu">Образование</a></option>
+                        <option value="#science-melsu"><a href="#science-melsu">Университетская наука</a></option>
+                        <option value="#schoolchildren-melsu"><a href="#schoolchildren-melsu">МелГУ для школьников</a></option>
+                        <option value="#library-melsu"><a href="#library-melsu">Научная библиотека МелГУ</a></option>
+                    </select>
+                </div>
             </div>
         </section>
-        <section class="container custom lg:p-2.5">
+        <section id="melsu-today" class="container custom lg:p-2.5">
             <div class="grid lg:grid-cols-[29%,70%] xl:grid-cols-[39%,60%] bg-[var(--primary-color)] w-full lg:gap-x-6 xl:gap-x-3 lg:min-h-[240px] items-end xl:relative mb-6 xl:mb-8">
                 <div class="xl:absolute xl:top-[50px] xl:left-[-50px] xl:py-0">
                         <img src="../assets/img/melsu-unv.jpg" alt="" class="lg:h-[240px] xl:h-[360px] xl:w-[510px]">
@@ -471,7 +482,7 @@
                     </div>
                 </div>
         </section>
-        <section class="timeline-carousel">
+        <section id="history-melsy" class="timeline-carousel">
             <div class="container custom">
                 <h2 class="font-bold text-2xl mt-5 lg:mt-12 lg:mb-6">История МелГУ</h2>
             </div>
@@ -590,7 +601,7 @@
 
             </div>
         </section>
-        <section class="container custom lg:p-2.5">
+        <section id="cooperation-melsu" class="container custom lg:p-2.5">
             <div class="grid lg:grid-cols-[29%,70%] xl:grid-cols-[39%,60%] bg-[var(--primary-color)] w-full lg:gap-x-6 xl:gap-x-3 lg:min-h-[240px] items-end xl:relative mb-6 xl:mb-8">
                 <div class="xl:absolute xl:top-[50px] xl:left-[-50px] xl:py-0">
                     <img src="../assets/img/melsu-unv.jpg" alt="" class="lg:h-[240px] xl:h-[360px] xl:w-[510px]">
@@ -614,7 +625,7 @@
                 </div>
             </div>
         </section>
-        <section class="container custom lg:p-2.5">
+        <section id="education-melsu" class="container custom lg:p-2.5">
             <div class="grid lg:grid-cols-[29%,70%] xl:grid-cols-[39%,60%] bg-[var(--primary-color)] w-full lg:gap-x-6 xl:gap-x-3 lg:min-h-[240px] items-end xl:relative mb-6 xl:mb-8">
                 <div class="xl:absolute xl:top-[50px] xl:left-[-50px] xl:py-0">
                     <img src="../assets/img/melsu-unv.jpg" alt="" class="lg:h-[240px] xl:h-[360px] xl:w-[510px]">
@@ -663,7 +674,7 @@
                 </div>
             </div>
         </section>
-        <section class="container custom lg:p-2.5">
+        <section id="science-melsu" class="container custom lg:p-2.5">
             <div class="grid lg:grid-cols-[29%,70%] xl:grid-cols-[39%,60%] bg-[var(--primary-color)] w-full lg:gap-x-6 xl:gap-x-3 lg:min-h-[240px] items-end xl:relative mb-6 xl:mb-8">
                 <div class="xl:absolute xl:top-[50px] xl:left-[-50px] xl:py-0">
                     <img src="../assets/img/melsu-unv.jpg" alt="" class="lg:h-[240px] xl:h-[360px] xl:w-[510px]">
@@ -708,7 +719,7 @@
                 </div>
             </div>
         </section>
-        <section class="container custom lg:p-2.5">
+        <section id="schoolchildren-melsu" class="container custom lg:p-2.5">
             <div class="grid lg:grid-cols-[29%,70%] xl:grid-cols-[39%,60%] bg-[var(--primary-color)] w-full lg:gap-x-6 xl:gap-x-3 lg:min-h-[240px] items-end xl:relative mb-6 xl:mb-8">
                 <div class="xl:absolute xl:top-[50px] xl:left-[-50px] xl:py-0">
                     <img src="../assets/img/melsu-unv.jpg" alt="" class="lg:h-[240px] xl:h-[360px] xl:w-[510px]">
@@ -733,7 +744,7 @@
                 </div>
             </div>
         </section>
-        <section class="container custom lg:p-2.5">
+        <section id="library-melsu" class="container custom lg:p-2.5">
             <div class="grid lg:grid-cols-[29%,70%] xl:grid-cols-[39%,60%] bg-[var(--primary-color)] w-full lg:gap-x-6 xl:gap-x-3 lg:min-h-[240px] items-end xl:relative mb-6 xl:mb-8">
                 <div class="xl:absolute xl:top-[50px] xl:left-[-50px] xl:py-0">
                     <img src="../assets/img/melsu-unv.jpg" alt="" class="lg:h-[240px] xl:h-[360px] xl:w-[510px]">
@@ -870,5 +881,6 @@
 <script src="../assets/js/aware-button-animaton.js"></script>
 <script src="../assets/js/slider-bg.js"></script>
 <script src="../assets/js/timeline-slider.js"></script>
+<script src="../assets/js/custom-select-navigation.js"></script>
 </body>
 </html>
