@@ -1302,7 +1302,9 @@ body{
 /* Custom Select */
 .center {
     margin-top: 5px;
-  position: relative;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
 }
 .custom-select-wrapper {
@@ -1399,7 +1401,7 @@ body{
 .nav-burger{
     display: none;
     position: fixed;
-    left: 1%;
+    left: 2.29%;
     z-index: 100;
 }
 .nav-burger .bi-list::before{
@@ -1408,7 +1410,7 @@ body{
 .side-nav-page {
     position: fixed;
     left: 2%;
-    top: 30%;
+    top: 22.5%;
     z-index: 30;
     width: 360px;
 }
@@ -1440,21 +1442,25 @@ body{
 }
 /*Toggle hamburger style*/
 .hamburger-nav-box{
-    width: 100px;
+    width: 50px;
 }
 .burger {
     cursor: pointer;
     position: relative;
     visibility: inherit;
     display: block;
-    width: 100px;
+    width: 50px;
     height: 50px;
     z-index: 1;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
 }
 
 .burger span {
     margin: 0 auto;
-    position: relative;
+    top: 46%;
+    left: 20%;
+    position: absolute;
 }
 
 .burger span:before,
@@ -1465,18 +1471,18 @@ body{
 .burger span,
 .burger span:before,
 .burger span:after {
-    width: 40px;
+    width: 30px;
     height: 3px;
-    background-color: #000000;
+    background-color: #584252;
     display: block;
 }
 
 .burger span:before {
-    margin: -9px 0 0;
+    margin: -7px 0 0;
 }
 
 .burger span:after {
-    margin: 9px 0 0;
+    margin: 7px 0 0;
 }
 
 .burger span {
@@ -1550,6 +1556,9 @@ body{
     opacity: 1;
 }
 @media screen and (max-width: 1920px){
+    .side-nav-page{
+        top: 18%;
+    }
     .side-nav-page.open .side-nav{
         transform: translateX(26.5%);
     }
