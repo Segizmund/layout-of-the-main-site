@@ -1432,7 +1432,7 @@ body{
     transform: translateX(-120%);
 }
 .side-nav-page.open .side-nav{
-    transform: translateX(28%);
+    transform: translateX(36%);
     width: 360px;
     visibility: visible;
     pointer-events: all;
