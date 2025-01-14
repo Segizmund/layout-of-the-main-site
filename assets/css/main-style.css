@@ -1307,7 +1307,7 @@ body{
 }
 .custom-select-wrapper {
     z-index: 20;
-    position: fixed;
+    position: absolute;
     display: inline-block;
     user-select: none;
 }
@@ -1381,7 +1381,7 @@ body{
     padding: 0 22px;
     border-bottom: 1px solid var(--primary-color);
     font-size: 18px;
-    font-weight: 600;
+
     color: var(--primary-color);
     line-height: 47px;
     cursor: pointer;
@@ -1396,7 +1396,209 @@ body{
     background: var(--primary-color);
     color: #FFFFFF;
 }
+.nav-burger{
+    display: none;
+    position: fixed;
+    left: 1%;
+    z-index: 100;
+}
+.nav-burger .bi-list::before{
+    font-size: 40px;
+}
+.side-nav-page {
+    position: fixed;
+    left: 2%;
+    top: 30%;
+    z-index: 30;
+    width: 360px;
+}
+.side-nav{
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    width: 0;
+    margin: 15px 0;
+    border: 1px solid var(--primary-color);
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .07);
+    background: #FFFFFF;
+    transition: all .6s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-120%);
+}
+.side-nav-page.open .side-nav{
+    transform: translateX(28%);
+    width: 360px;
+    visibility: visible;
+    pointer-events: all;
+    opacity: 1;
+}
+/*Toggle hamburger style*/
+.hamburger-nav-box{
+    width: 100px;
+}
+.burger {
+    cursor: pointer;
+    position: relative;
+    visibility: inherit;
+    display: block;
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+}
+
+.burger span {
+    margin: 0 auto;
+    position: relative;
+}
+
+.burger span:before,
+.burger span:after {
+    position: absolute;
+    content: '';
+}
+.burger span,
+.burger span:before,
+.burger span:after {
+    width: 40px;
+    height: 3px;
+    background-color: #000000;
+    display: block;
+}
+
+.burger span:before {
+    margin: -9px 0 0;
+}
+
+.burger span:after {
+    margin: 9px 0 0;
+}
+
+.burger span {
+    transition-duration: 0s;
+    transition-delay: .3s;
+}
+
+.burger.open span {
+    background-color: rgba(255, 255, 255, 0);
+    transition-delay: .3s;
+}
+
+.burger span:before {
+    transition-property: margin, transform;
+    transition-duration: .3s;
+    transition-delay: .3s, 0s;
+}
+
+.burger.open span:before {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0s, .3s;
+}
+
+.burger span:after {
+    transition-property: margin, transform;
+    transition-duration: .3s;
+    transition-delay: .3s, 0s;
+}
+
+.burger.open span:after {
+    margin-top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0s, .3s;
+}
+
+.hamburger-nav-box .text p{
+    transition: all .5s ease-in-out;
+}
+
+.hamburger-nav-box .text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    overflow: hidden;
+    top: -25px;
+}
+
+.hamburger-nav-box .menu,
+.hamburger-nav-box .close {
+    position: absolute;
+}
+
+.hamburger-nav-box .menu {
+    top: 0;
+}
+
+.open + .text .menu {
+    top: -20px;
+    opacity: 0;
+}
+
+.close {
+    top: 20px;
+    opacity: 0;
+}
+
+.open + .text .close {
+    top: 0;
+    opacity: 1;
+}
+@media screen and (max-width: 1920px){
+    .side-nav-page.open .side-nav{
+        transform: translateX(26.5%);
+    }
+}@media screen and (max-width: 1850px){
+    .side-nav-page.open .side-nav{
+        transform: translateX(25.7%);
+    }
+}
+@media screen and (max-width: 1666px){
+    .side-nav-page.open .side-nav{
+        transform: translateX(23.2%);
+    }
+    .nav-burger{
+        left: 0.5%;
+    }
+}
+@media screen and (max-width: 1566px){
+    .nav-burger{
+        left: 0;
+    }
+    .side-nav-page.open .side-nav{
+        transform: translateX(22%);
+    }
+}
+@media screen and (max-width: 1440px){
+    .side-nav-page.open .side-nav{
+        transform: translateX(20%);
+    }
+    .hamburger-nav-box,.burger{
+        width: 93px;
+    }
+    .hamburger-nav-box .text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .side-nav-page.open .side-nav{
+        transform: translateX(19%);
+    }
+}
+
+/*END Toggle hamburger style*/
 @media screen and (max-width: 1280px){
+    .side-nav-page.open .side-nav{
+        transform: translateX(17.7%);
+    }
+    .hamburger-nav-box,.burger{
+        width: 72px;
+    }
     #melsu-today{
         margin-top: 25px !important;
     }
@@ -1415,7 +1617,18 @@ body{
         width: 314px;
     }
 }
+@media screen and (max-width: 1199px) {
+    .side-nav-page.open .side-nav{
+        transform: translateX(16.7%);
+    }
+}
 @media screen and (max-width: 1024px){
+    .side-nav-page{
+        top: 22%;
+    }
+    .side-nav-page.open .side-nav{
+        transform: translateX(14.5%);
+    }
     .custom-select-trigger{
       width: 270px;
     }
@@ -1507,6 +1720,9 @@ body{
                 width: 60%;
             }
         }
+    }
+    .nav-burger,.hamburger-nav-box{
+        display: none;
     }
 }
 @media screen and (max-width: 767px){
