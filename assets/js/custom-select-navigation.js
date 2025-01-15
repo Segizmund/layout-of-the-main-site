@@ -5,7 +5,6 @@ $(document).ready(function() {
     console.log(initialPosition)
     $(window).scroll(function() {
         var currentPosition = $(window).scrollTop();
-        console.log(currentPosition);
         if (currentPosition > initialPosition) {
             burger.fadeIn();
             $('.burger').removeClass('open');
@@ -13,6 +12,23 @@ $(document).ready(function() {
             $('.side-nav-page').removeClass('open');
         } else {
             burger.fadeOut();
+        }
+        var blockPositions = {};
+        $('[id]').each(function() {
+            blockPositions[this.id] = $(this).offset().top;
+        });
+        console.log(blockPositions[0])
+        var currentBlock = null;
+        for (var id in blockPositions) {
+            if (currentPosition >= blockPositions[id]) {
+                currentBlock = id;
+                break;
+            }
+        }
+
+        $('.custom-option').removeClass('active');
+        if (currentBlock) {
+            $('.custom-option a[href="' + currentBlock + '"]').parent().addClass('active');
         }
     });
     $('.burger').click(function() {
