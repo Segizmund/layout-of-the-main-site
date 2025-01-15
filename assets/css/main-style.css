@@ -1401,7 +1401,7 @@ body{
 .nav-burger{
     display: none;
     position: fixed;
-    left: 2.29%;
+    left: 2.7%;
     z-index: 100;
 }
 .nav-burger .bi-list::before{
@@ -1442,15 +1442,15 @@ body{
 }
 /*Toggle hamburger style*/
 .hamburger-nav-box{
-    width: 50px;
+    width: 55px;
 }
 .burger {
     cursor: pointer;
     position: relative;
     visibility: inherit;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     z-index: 1;
     border: 1px solid #E8E8E8;
     border-radius: 50%;
@@ -1471,7 +1471,7 @@ body{
 .burger span,
 .burger span:before,
 .burger span:after {
-    width: 30px;
+    width: 33px;
     height: 3px;
     background-color: #584252;
     display: block;
@@ -1572,13 +1572,10 @@ body{
         transform: translateX(23.2%);
     }
     .nav-burger{
-        left: 0.5%;
+        left: 2%;
     }
 }
 @media screen and (max-width: 1566px){
-    .nav-burger{
-        left: 0;
-    }
     .side-nav-page.open .side-nav{
         transform: translateX(22%);
     }
@@ -1586,9 +1583,6 @@ body{
 @media screen and (max-width: 1440px){
     .side-nav-page.open .side-nav{
         transform: translateX(20%);
-    }
-    .hamburger-nav-box,.burger{
-        width: 93px;
     }
     .hamburger-nav-box .text{
         font-size: 14px;
@@ -1604,9 +1598,6 @@ body{
 @media screen and (max-width: 1280px){
     .side-nav-page.open .side-nav{
         transform: translateX(17.7%);
-    }
-    .hamburger-nav-box,.burger{
-        width: 72px;
     }
     #melsu-today{
         margin-top: 25px !important;
@@ -1631,9 +1622,17 @@ body{
         transform: translateX(16.7%);
     }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1160px){
+    .nav-burger{
+        left: 1.5%;
+    }
     .side-nav-page{
         top: 22%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .side-nav-page{
+        top: 14%;
     }
     .side-nav-page.open .side-nav{
         transform: translateX(14.5%);
@@ -2521,18 +2520,27 @@ footer{
         left: calc(50% - 23px);
         width: 36px;
         li{
-            margin-bottom: 20px;
+            margin-bottom: 45px;
         }
+    }
+   .box-side-social-link li:nth-child(2) > a{
+       padding: 17px 16.5px;
+       i{
+           padding-top: 1px;
+           height: 20px;
+           width: 21.44px;
+       }
     }
 }
 .social-link{
     border-radius: 50%;
     border: 1px solid #E8E8E8;
-    padding: 7px 8px;
+    padding: 17px 15.79px;
     text-align: center;
     transition: var(--transition-link);
     i:before{
         color: #584252;
+        font-size: 20px;
     }
 }
 .social-link:hover{
