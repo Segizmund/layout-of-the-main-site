@@ -13,23 +13,6 @@ $(document).ready(function() {
         } else {
             burger.fadeOut();
         }
-        var blockPositions = {};
-        $('[id]').each(function() {
-            blockPositions[this.id] = $(this).offset().top;
-        });
-        console.log(blockPositions[0])
-        var currentBlock = null;
-        for (var id in blockPositions) {
-            if (currentPosition >= blockPositions[id]) {
-                currentBlock = id;
-                break;
-            }
-        }
-
-        $('.custom-option').removeClass('active');
-        if (currentBlock) {
-            $('.custom-option a[href="' + currentBlock + '"]').parent().addClass('active');
-        }
     });
     $('.burger').click(function() {
         $(this).toggleClass('open');
