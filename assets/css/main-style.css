@@ -1424,8 +1424,8 @@ body{
 }
 .side-nav-page {
     position: fixed;
-    left: 2%;
-    top: 22.5%;
+    left: 50px;
+    top: 19%;
     z-index: 30;
     width: 360px;
 }
@@ -1570,50 +1570,8 @@ body{
     top: 0;
     opacity: 1;
 }
-@media screen and (max-width: 1920px){
-    .side-nav-page{
-        top: 18%;
-    }
-    .side-nav-page.open .side-nav{
-        transform: translateX(26.5%);
-    }
-}@media screen and (max-width: 1850px){
-    .side-nav-page.open .side-nav{
-        transform: translateX(25.7%);
-    }
-}
-@media screen and (max-width: 1666px){
-    .side-nav-page.open .side-nav{
-        transform: translateX(23.2%);
-    }
-    .nav-burger{
-        left: 2%;
-    }
-}
-@media screen and (max-width: 1566px){
-    .side-nav-page.open .side-nav{
-        transform: translateX(22%);
-    }
-}
-@media screen and (max-width: 1440px){
-    .side-nav-page.open .side-nav{
-        transform: translateX(20%);
-    }
-    .hamburger-nav-box .text{
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 1366px) {
-    .side-nav-page.open .side-nav{
-        transform: translateX(19%);
-    }
-}
-
 /*END Toggle hamburger style*/
 @media screen and (max-width: 1280px){
-    .side-nav-page.open .side-nav{
-        transform: translateX(17.7%);
-    }
     #melsu-today{
         margin-top: 25px !important;
     }
@@ -1632,26 +1590,8 @@ body{
         width: 314px;
     }
 }
-@media screen and (max-width: 1199px) {
-    .side-nav-page.open .side-nav{
-        transform: translateX(16.7%);
-    }
-}
-@media screen and (max-width: 1160px){
-    .nav-burger{
-        left: 1.5%;
-    }
-    .side-nav-page{
-        top: 22%;
-    }
-}
 @media screen and (max-width: 1024px){
-    .side-nav-page{
-        top: 14%;
-    }
-    .side-nav-page.open .side-nav{
-        transform: translateX(14.5%);
-    }
+
     .custom-select-trigger{
       width: 270px;
     }

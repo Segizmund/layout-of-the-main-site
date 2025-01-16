@@ -3,7 +3,7 @@ function checkScreenWidth() {
     const video = document.getElementById('intro-video');
     const screenWidth = window.innerWidth;
 
-    if (screenWidth >= 1140) {
+    if (screenWidth >= 1367) {
         video.addEventListener('play', function () {
             document.body.style.overflow = 'hidden';
         });
