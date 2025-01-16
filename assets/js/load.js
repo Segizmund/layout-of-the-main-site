@@ -11,7 +11,8 @@ function checkScreenWidth() {
             video.classList.add('end');
             document.body.style.overflow = 'auto';
         }, {once: true})
-    } else {
+    }
+    else  {
         video.src = '../assets/video/load-mob.webm';
         video.addEventListener('play', function () {
             document.body.style.overflow = 'hidden';
