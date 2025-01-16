@@ -2519,7 +2519,7 @@ footer{
 /*side Offset style*/
 .side_offset{
     position: fixed;
-    width: 7%;
+    width: 100px;
     background-color: #FFFFFF;
     z-index: 99;
     height: 100%;
