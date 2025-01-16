@@ -2534,27 +2534,18 @@ footer{
         left: calc(50% - 23px);
         width: 36px;
         li{
-            margin-bottom: 45px;
+            margin-bottom: 20px;
         }
-    }
-   .box-side-social-link li:nth-child(2) > a{
-       padding: 17px 16.5px;
-       i{
-           padding-top: 1px;
-           height: 20px;
-           width: 21.44px;
-       }
     }
 }
 .social-link{
     border-radius: 50%;
     border: 1px solid #E8E8E8;
-    padding: 17px 15.79px;
+    padding: 7px 8px;
     text-align: center;
     transition: var(--transition-link);
     i:before{
         color: #584252;
-        font-size: 20px;
     }
 }
 .social-link:hover{
