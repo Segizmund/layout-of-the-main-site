@@ -6,6 +6,20 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+#intro-video {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    transition: .3s linear;
+    transform: translateX(0);
+}
+#intro-video.end{
+    transform: translateX(100%);
+}
 /*style scroll*/
 body::-webkit-scrollbar {
     width: 5px;
