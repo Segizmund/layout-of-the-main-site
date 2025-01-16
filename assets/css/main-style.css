@@ -61,7 +61,7 @@ body{
 }
 /*main wrapper style*/
 .main-wrapper{
-    padding-left: 7%;
+    padding-left: 100px;
 }
 .main-section{
     transition: var(--transition-link);
@@ -1414,8 +1414,9 @@ body{
 }
 .nav-burger{
     display: none;
-    position: fixed;
-    left: 2.7%;
+    position: absolute;
+    left: calc(50% - 23px);
+    top: 20%;
     z-index: 100;
 }
 .nav-burger .bi-list::before{
@@ -1448,7 +1449,7 @@ body{
     transform: translateX(-120%);
 }
 .side-nav-page.open .side-nav{
-    transform: translateX(36%);
+    transform: translateX(50px);
     width: 360px;
     visibility: visible;
     pointer-events: all;
@@ -1456,15 +1457,15 @@ body{
 }
 /*Toggle hamburger style*/
 .hamburger-nav-box{
-    width: 55px;
+    width: 35px;
 }
 .burger {
     cursor: pointer;
     position: relative;
     visibility: inherit;
     display: block;
-    width: 55px;
-    height: 55px;
+    width: 35px;
+    height: 35px;
     z-index: 1;
     border: 1px solid #E8E8E8;
     border-radius: 50%;
@@ -1485,7 +1486,7 @@ body{
 .burger span,
 .burger span:before,
 .burger span:after {
-    width: 33px;
+    width: 20px;
     height: 3px;
     background-color: #584252;
     display: block;
