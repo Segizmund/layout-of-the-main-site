@@ -1,8 +1,24 @@
-const video = document.getElementById('intro-video');
-video.addEventListener('play', function() {
-    document.body.style.overflow = 'hidden';
-});
-video.addEventListener('ended', () => {
-    video.classList.add('end');
-    document.body.style.overflow = 'auto';
-},{ once: true })
+
+function checkScreenWidth() {
+    const video = document.getElementById('intro-video');
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth >= 1140) {
+        video.src = '../assets/video/2KK.webm';
+    } else {
+        video.src = '../assets/video/load-mob.webm';
+
+    }
+    video.addEventListener('play', function () {
+        document.body.style.overflow = 'hidden';
+    });
+    video.addEventListener('ended', () => {
+        video.classList.add('end');
+        document.body.style.overflow = 'auto';
+    }, {once: true})
+}
+
+window.onload = checkScreenWidth;
+
+
+window.addEventListener('resize', checkScreenWidth);
