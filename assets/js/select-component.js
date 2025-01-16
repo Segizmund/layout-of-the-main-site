@@ -36,6 +36,5 @@ function initSelect(selectWrapper) {
         dropdown.classList.remove('open');
     });
 }
-console.log('123')
 let selectWrappers = document.querySelectorAll('.select-wrapper');
 selectWrappers.forEach(initSelect);
