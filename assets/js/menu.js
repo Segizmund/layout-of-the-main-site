@@ -12,8 +12,8 @@ let searchContent = document.querySelector('.search-box .container');
 let SearchHeight = searchContent.getBoundingClientRect().height;
 let navbarCollapseContent = document.querySelector('.navbar-collapse .navbar-nav');
 let navbarCollapseHeight = navbarCollapseContent.getBoundingClientRect().height;
-let underNavBarContent = document.querySelector('.navbar-collapse .under-navbar-nav');
-let underNavBarHeight = underNavBarContent.getBoundingClientRect().height;
+    let underNavBarContent = document.querySelector('.navbar-collapse .navbar-nav');
+    let underNavBarHeight = underNavBarContent.getBoundingClientRect().height;
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 1025px)").matches) {
         navBar.style.height = '110px';
@@ -63,7 +63,7 @@ function checkScreenWidth() {
             content.classList.toggle('opacit');
             if(navBar.classList.contains('opened')){
                 let navbarCollapseOpened = document.querySelector('.navbar-collapse.opened');
-                navbarCollapseOpened.style.height = navbarCollapseHeight + underNavBarHeight + 56.5 + 'px';
+                navbarCollapseOpened.style.height = underNavBarHeight + 56.5 + 'px';
                 searchBox.style.height = '0px';
             }
             else{

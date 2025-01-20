@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var block = $('.custom-select-nav');
     var burger = $(".nav-burger");
     var initialPosition = block.offset().top;
