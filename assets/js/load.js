@@ -1,6 +1,7 @@
 
 function checkScreenWidth() {
     const video = document.getElementById('intro-video');
+    const videoWrapper = document.querySelector('.wrapper-video');
     const screenWidth = window.innerWidth;
 
     if (screenWidth >= 1367) {
@@ -8,7 +9,7 @@ function checkScreenWidth() {
             document.body.style.overflow = 'hidden';
         });
         video.addEventListener('ended', () => {
-            video.classList.add('end');
+            videoWrapper.classList.add('end');
             document.body.style.overflow = 'auto';
         }, {once: true})
     }
@@ -18,7 +19,7 @@ function checkScreenWidth() {
             document.body.style.overflow = 'hidden';
         });
         video.addEventListener('ended', () => {
-            video.classList.add('end');
+            videoWrapper.classList.add('end');
             document.body.style.overflow = 'auto';
         }, {once: true})
 
