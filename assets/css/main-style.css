@@ -3676,6 +3676,7 @@ td.today.active.start-date.active.end-date.available,
     transform: translateY(0%);
 }
 #anim-logo{
+    cursor: pointer;
     position: absolute;
     z-index: 999;
     right: -95px;
