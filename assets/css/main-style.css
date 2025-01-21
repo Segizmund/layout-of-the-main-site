@@ -3632,11 +3632,52 @@ td.today.active.start-date.active.end-date.available,
     position: fixed;
     z-index: 999;
     opacity: 1;
-    right: 80px;
+    right: 100px;
     bottom: 20px;
+}
+.excursion-menu-box{
+    overflow: hidden;
+    z-index: 100;
+    position: absolute;
+    top: -190px;
+    width: 121%;
+    .excursion-menu {
+        background-color: #FFFFFF;
+        line-height: 47px;
+        transform: translateY(100%);
+        transition: .3s linear;
+        h1 {
+            background-color: var(--primary-color);
+            font-weight: bold;
+            border-bottom: 1px solid white;
+            font-size: 24px;
+            color: white;
+            padding: 0px 11px;
+        }
+
+        li {
+            border-bottom: 1px solid var(--primary-color);
+            background-color: white;
+            padding: 0px 22px;
+            color: var(--secondary-color);
+            line-height: 47px;
+            transition: .3s linear;
+            a {
+                font-size: 18px;
+            }
+            &:hover{
+                background-color: var(--primary-color);
+                color: white;
+            }
+        }
+    }
+}
+.excursion-menu.open{
+    transform: translateY(0%);
 }
 #anim-logo{
     position: absolute;
+    z-index: 999;
     right: -95px;
     top: -65px;
     max-height: 208px;
@@ -3739,5 +3780,10 @@ a.modal-open {
 .modal-area input[type="radio"]:checked + label {
     background:#fff;
     color:#424242;
+}
+@media screen and (max-width: 1024px){
+    .excursion-btn{
+        display: none;
+    }
 }
 /*END excursion style*/
