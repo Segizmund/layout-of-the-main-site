@@ -3629,13 +3629,18 @@ td.today.active.start-date.active.end-date.available,
 .excursion-btn{
     box-shadow: 0px 0px 45px 0px rgba(255, 0, 0, 0.5);
     background: linear-gradient(90deg, #ED303C 0%, #C10F1A 69%);
+    transition: .3s linear;
     position: fixed;
     z-index: 999;
     opacity: 1;
     right: 100px;
     bottom: 20px;
 }
+.excursion-btn:hover{
+    box-shadow: 0px 0px 45px 0px rgb(255 0 0);
+}
 .excursion-menu-box{
+    pointer-events: none;
     overflow: hidden;
     z-index: 100;
     position: absolute;
@@ -3658,6 +3663,7 @@ td.today.active.start-date.active.end-date.available,
         li {
             border-bottom: 1px solid var(--primary-color);
             background-color: white;
+            cursor: pointer;
             padding: 0px 22px;
             color: var(--secondary-color);
             line-height: 47px;
@@ -3670,7 +3676,13 @@ td.today.active.start-date.active.end-date.available,
                 color: white;
             }
         }
+        li:hover{
+
+        }
     }
+}
+.excursion-menu-box.open{
+    pointer-events: auto;
 }
 .excursion-menu.open{
     transform: translateY(0%);
