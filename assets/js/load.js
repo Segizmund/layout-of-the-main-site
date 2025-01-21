@@ -6,21 +6,21 @@ function checkScreenWidth() {
 
     if (screenWidth >= 1367) {
         video.addEventListener('play', function () {
-            document.body.style.overflow = 'hidden';
+            document.body.classList.add('no-scroll');
         });
         video.addEventListener('ended', () => {
             videoWrapper.classList.add('end');
-            document.body.style.overflow = 'auto';
+            document.body.classList.remove('no-scroll');
         }, {once: true})
     }
     else  {
         video.src = '../assets/video/load-mob.webm';
         video.addEventListener('play', function () {
-            document.body.style.overflow = 'hidden';
+            document.body.classList.add('no-scroll');
         });
         video.addEventListener('ended', () => {
             videoWrapper.classList.add('end');
-            document.body.style.overflow = 'auto';
+            document.body.classList.remove('no-scroll');
         }, {once: true})
 
     }
