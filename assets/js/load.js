@@ -28,5 +28,6 @@ function checkScreenWidth() {
 
 window.onload = checkScreenWidth;
 
-
-window.addEventListener('resize', checkScreenWidth);
+document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener('resize', checkScreenWidth);
+});
