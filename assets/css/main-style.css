@@ -3696,6 +3696,7 @@ td.today.active.start-date.active.end-date.available,
     max-height: 208px;
 }
 a.modal-open {
+    cursor: pointer;
     color: white;
     font-size: 24px;
     width: 345px;
