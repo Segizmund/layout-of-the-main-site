@@ -7,7 +7,9 @@ let btnSearch = document.querySelectorAll('.btn-search');
 let searchBox = document.querySelector('.search-box');
 let closeSeachBox = document.querySelector('.close-search');
 let btnsFilterSearch = document.querySelectorAll('.btn-filter-search');
-
+    for (let menu of dropDownMenus) {
+        console.log(menu.id);
+    }
 let searchContent = document.querySelector('.search-box .container');
 let SearchHeight = searchContent.getBoundingClientRect().height;
 let navbarCollapseContent = document.querySelector('.navbar-collapse .navbar-nav');
@@ -19,11 +21,14 @@ function checkScreenWidth() {
         navBar.style.height = '110px';
         menuPoints.forEach((point, index) => {
             point.addEventListener('mouseover', () => {
-                if (dropDownMenus[index]) {
-                    dropDownMenus[index].classList.remove('hidde');
-                    content.style.opacity = '0.3';
-                    point.style.color = '#c10f1a';
-                }
+                dropDownMenus.forEach((item) =>{
+                    if (point.getAttribute('data-menu') === item.id) {
+                        item.classList.remove('hidde');
+                        content.style.opacity = '0.3';
+                        point.style.color = '#c10f1a';
+                    }
+                });
+
             });
 
             point.addEventListener('mouseleave', () => {
@@ -77,14 +82,18 @@ function checkScreenWidth() {
         });
         menuPoints.forEach((point, index) => {
             point.addEventListener('click', () => {
-                dropDownMenus[index].classList.add('opened');
-                document.body.classList.add('no-scroll');
+                if(dropDownMenus[index]) {
+                    dropDownMenus[index].classList.add('opened');
+                    document.body.classList.add('no-scroll');
+                }
             })
         });
         backButtons.forEach((btn, index) => {
             btn.addEventListener('click', () => {
-                dropDownMenus[index].classList.remove('opened');
-                document.body.classList.remove('no-scroll');
+                if(dropDownMenus[index]) {
+                    dropDownMenus[index].classList.remove('opened');
+                    document.body.classList.remove('no-scroll');
+                }
             })
         });
     }

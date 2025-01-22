@@ -236,6 +236,7 @@ body{
         }
     }
     ul li{
+        cursor: pointer;
         min-height: 110px;
         padding: 35px 20px;
     }

@@ -14,7 +14,7 @@ function checkScreenWidth() {
         }, {once: true})
     }
     else  {
-        video.src = '../assets/video/load-mob.webm';
+        video.src = '../assets/video/load-mob.mp4';
         video.addEventListener('play', function () {
             document.body.classList.add('no-scroll');
         });
