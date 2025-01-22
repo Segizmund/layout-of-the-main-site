@@ -14,7 +14,7 @@ function checkScreenWidth() {
         }, {once: true})
     }
     else if (screenWidth >= 991){
-        video.src = '../assets/video/load-mob.mp4';
+        video.src = '../assets/video/load-mob.webm';
         video.addEventListener('play', function () {
             document.body.classList.add('no-scroll');
         });
