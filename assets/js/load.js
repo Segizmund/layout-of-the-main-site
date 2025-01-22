@@ -13,7 +13,7 @@ function checkScreenWidth() {
             document.body.classList.remove('no-scroll');
         }, {once: true})
     }
-    else  {
+    else if (screenWidth >= 991){
         video.src = '../assets/video/load-mob.mp4';
         video.addEventListener('play', function () {
             document.body.classList.add('no-scroll');
@@ -23,6 +23,9 @@ function checkScreenWidth() {
             document.body.classList.remove('no-scroll');
         }, {once: true})
 
+    }
+    else{
+        videoWrapper.style.display = "none";
     }
 }
 
