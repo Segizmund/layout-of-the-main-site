@@ -338,9 +338,11 @@ body{
         }
         .wrapper-dropdown-menu{
             display: flex;
+            justify-content: space-between;
             width: 100%;
             .box-dropdown-menu{
                 width: 24%;
+                max-width: 400px;
                 .nav{
                     display: flex;
                     flex-direction: column;
@@ -607,7 +609,8 @@ body{
         .wrapper-dropdown-menu{
             flex-direction: column;
             .box-dropdown-menu{
-                width: 95%;
+                max-width: 100% !important;
+                width: 100% !important;
                 nav{
                     a{
                         width: 95%;
