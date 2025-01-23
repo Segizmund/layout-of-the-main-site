@@ -174,7 +174,7 @@ closeSearchBox.addEventListener('click', () => {
     }
 });
 document.addEventListener('click', (event) => {
-    if (searchBox.classList.contains('active') && !searchBox.contains(event.target) &&  event.target.closest('btn-search')) {
+    if (searchBox.classList.contains('active') && !searchBox.contains(event.target) &&  !event.target.closest('.btn-search')) {
         console.log('Закрываем поиск');
         closeAllSearch();
     }
