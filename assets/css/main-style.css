@@ -2534,15 +2534,19 @@ footer{
     display: flex;
     z-index: 0;
     height: 100vh;
-    .left-side-menu{
-        li{
-            transition: var(--transition-link);
-            border-bottom: 1px solid white;
-        }
-        li:hover {
-            border-bottom: 1px solid var(--primary-color);
-        }
+    .wrapp-left-side-menu {
 
+        .left-side-menu {
+            li {
+                transition: var(--transition-link);
+                border-bottom: 1px solid white;
+            }
+
+            li:hover {
+                border-bottom: 1px solid var(--primary-color);
+            }
+
+        }
     }
 }
 /*END main template style*/
