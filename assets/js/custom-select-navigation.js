@@ -57,7 +57,6 @@ $(".custom-option").on("click", function() {
 
     var $originalOption = $(this);
     var href = $originalOption.find('a').attr('href');
-    // Плавный скролл до якоря
     $('html, body').animate({
         scrollTop: $(href).offset().top
     }, 500);

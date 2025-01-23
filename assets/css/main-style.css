@@ -92,7 +92,7 @@ body{
 /*style search*/
 .search-box {
     background-color: #FAFAFA;
-    width: 93%;
+    width: calc(100% - 100px);
     transition: var(--transition-link);
     top: -311px;
     z-index: 81;
@@ -214,7 +214,7 @@ body{
         transition: var(--transition-link);
 
         &:hover{
-            color: #9B9398;
+            color: var(--primary-color);
         }
     }
 }
@@ -1341,14 +1341,12 @@ body{
 /* Custom Select */
 .center {
     margin-top: 5px;
-    position: relative;
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 .custom-select-wrapper {
     z-index: 20;
-    position: absolute;
     display: inline-block;
     user-select: none;
 }
