@@ -2790,15 +2790,27 @@ footer{
 .card-nap {
     display: flex;
     overflow: hidden;
+    background-color: white;
     position: relative;
     min-height: 300px;
+    svg{
+        z-index: 10;
+        position: absolute;
+        width: 50%;
+        right: 20px;
+        height: -webkit-fill-available;
+        path{
+            transition: var(--transition-link);
+            fill: #EEEEEE;
+        }
+    }
    & a{
        pointer-events: none;
        display: flex;
        flex-direction: column;
        min-height: 100%;
        p{
-           color: #BBBBBB;
+           color: #252422;
        }
        h2{
            color: var(--primary-color);
@@ -2806,7 +2818,7 @@ footer{
     }
     &.position-aware {
         a{
-            background-color: #FFFFFF;
+            justify-content: space-between;
             p,h2,span,div{
                 transition: all .8s linear;
                 z-index: 1;
@@ -2829,6 +2841,11 @@ footer{
         }
 
         &:hover {
+            svg{
+                path{
+                    fill: #C10F1A;
+                }
+            }
            a p,a h2,a span{
                transition: all .5s linear;
                color: #FFFFFF;
