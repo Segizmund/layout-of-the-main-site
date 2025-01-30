@@ -1,5 +1,4 @@
 const positionAwareElements = document.querySelectorAll('.position-aware');
-
 positionAwareElements.forEach(element => {
     let isAnimating = false;
     let animationFrame;
