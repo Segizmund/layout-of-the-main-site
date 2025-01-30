@@ -2798,6 +2798,7 @@ footer{
         position: absolute;
         width: 50%;
         right: 20px;
+        pointer-events: none;
         height: -webkit-fill-available;
         path{
             transition: var(--transition-link);
@@ -2821,7 +2822,7 @@ footer{
             justify-content: space-between;
             p,h2,span,div{
                 transition: all .8s linear;
-                z-index: 1;
+                z-index: 10;
             }
         }
         .aware-bg {
