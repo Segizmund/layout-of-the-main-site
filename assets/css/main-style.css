@@ -2837,7 +2837,7 @@ footer{
             right: 0;
             top: 0;
             transform: translate(-50%, -50%);
-            transition: width 0.8s ease-in-out, height 0.8s ease-in-out;
+            transition: width 0.8s ease, height 0.8s ease;
             z-index: 0;
         }
 
