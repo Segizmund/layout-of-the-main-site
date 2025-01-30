@@ -3852,3 +3852,22 @@ a.modal-open {
     }
 }
 /*END excursion style*/
+.vid-bg{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    opacity: 0.5;
+    pointer-events: none;
+}
+@media screen and (max-width: 1280px){
+    .vid-bg{
+        width: 70%;
+        right: -43px;
+    }
+}
+@media screen and (max-width: 1023px){
+    .vid-bg{
+        width: 100%;
+        right: 0px;
+    }
+}
