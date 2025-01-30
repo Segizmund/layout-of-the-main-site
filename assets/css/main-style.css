@@ -2806,7 +2806,6 @@ footer{
         }
     }
    & a{
-       pointer-events: none;
        display: flex;
        flex-direction: column;
        min-height: 100%;
@@ -3058,6 +3057,7 @@ td.today.active.start-date.active.end-date.available,
     list-style-type: circle;
 }
 .value-list{
+    z-index: 11 !important;
     transition: .3s ease-in-out !important;
     &.open {
         max-height: 320px !important;
