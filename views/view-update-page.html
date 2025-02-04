@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/main-style.css">
+    <link rel="stylesheet" href="../assets/css/new-tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="../assets/css/slider-bg-style.css">
+    <title>Абитуриентам</title>
+</head>
+<body>
+<div class="main-wrapper">
+    <header>
+        <div class="upper-menu bg-[#FAFAFA] z-[82]">
+            <div class="box-header-address bg-[#FAFAFA] z-[82]">
+                <h2 class="header-address">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#820000" class="bi bi-geo-alt-fill me-2" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>
+                    г. Мелитополь, пр. Б. Хмельницкого, д. 18
+                </h2>
+            </div>
+            <div class="box-upper-nav bg-[#FAFAFA] z-[82]">
+                <nav class="nav flex align-center">
+                    <a class="nav-link" href="#">Студенту</a>
+                    <a class="nav-link" href="#">Поступающему</a>
+                    <a class="nav-link" href="views/view-aspirantam.html">Аспиранту</a>
+                    <a class="nav-link" href="#">Выпускнику</a>
+                    <a class="nav-link" href="#">Партнеру</a>
+                    <a class="nav-link btn-search cursor-pointer flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+
+        </div>
+        <div class="search-box py-6">
+            <div class="container custom">
+                <div class="search-and-close-box mb-8">
+                    <h2 class="p-0">Поиск</h2>
+                    <span class="close-search"><i class="bi bi-x-lg me-2"></i>Закрыть</span>
+                </div>
+                <form class="search-form mb-8">
+                    <input class="form-control rounded-none" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="btn rounded-none text-white" type="submit">
+                        Искать
+                    </button>
+                </form>
+                <div class="box-btns grid grid-cols-1 lg:grid-cols-[1fr,1fr,1fr,1fr] gap-3 text-center mb-8">
+                    <a class="btn-filter-search active uppercase py-[15px] px-[20px]">Искать везде</a>
+                    <a class="btn-filter-search uppercase py-[15px] px-[20px]">Новости</a>
+                    <a class="btn-filter-search uppercase py-[15px] px-[20px]">Структура сайта</a>
+                    <a class="btn-filter-search uppercase py-[15px] px-[20px]">Справочник</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="box-logo">
+                <a href="#">
+                    <img src="../assets/img/white-logo.png" alt="Логотип университета">
+                </a>
+            </div>
+            <div class="box-main-menu">
+                <nav class="navbar">
+                    <button class="btn-search bg-[var(--primary-color)] min-h-[38px] min-w-[38px] flex items-center justify-center absolute right-[55px] top-[13px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                    <button class="navbar-toggler items-end rounded-0  border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="box-hamburg">
+                            <i class="bi bi-list"></i>
+                        </span>
+                    </button>
+                    <div class="navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li data-menu="menu_1" class="nav-item point-menu flex items-center">
+                                <a class="nav-link" href="#">О МелГУ</a>
+                            </li>
+                            <li data-menu="menu_2" class="nav-item point-menu flex items-center">
+                                <a class="nav-link" href="#">Образование</a>
+                            </li>
+                            <li data-menu="menu_3" class="nav-item point-menu flex items-center">
+                                <a class="nav-link" href="#">Наука</a>
+                            </li>
+                            <li data-menu="menu_4" class="nav-item point-menu flex items-center">
+                                <a class="nav-link" href="#">Молодежная политика</a>
+                            </li>
+                            <li data-menu="menu_5" class="nav-item point-menu flex items-center">
+                                <a class="nav-link" href="#">Доступная среда</a>
+                            </li>
+                            <li data-menu="menu_6" class="nav-item point-menu flex items-center">
+                                <a class="nav-link" href="#">Новости</a>
+                            </li>
+                        </ul>
+                        <div class="search-and-btn-box">
+                            <div class="personal-account-box">
+                                <button class="personal-account-btn flex align-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                                    </svg>
+                                    <span>Личный кабинет</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div id="menu_1" class="about-melsu-menu new-menu hidde">
+                    <div class="box-dropdown-btns">
+                        <div class="box-back-btn">
+                            <a class="back-btn">
+                                <i class="bi bi-arrow-left"></i>
+                                Назад
+                            </a>
+                        </div>
+                        <div class="box-transit-btn">
+                            <a class="transit-btn" href="../template/menu-page.html">
+                                О МелГУ
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wrapper-dropdown-menu">
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu_2" class="education-melsu-menu new-menu hidde">
+                    <div class="box-dropdown-btns">
+                        <div class="box-back-btn">
+                            <a class="back-btn">
+                                <i class="bi bi-arrow-left"></i>
+                                Назад
+                            </a>
+                        </div>
+                        <div class="box-transit-btn">
+                            <a class="transit-btn">
+                                Образование
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wrapper-dropdown-menu">
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu_3" class="science-melsu-menu new-menu hidde">
+                    <div class="box-dropdown-btns">
+                        <div class="box-back-btn">
+                            <a class="back-btn">
+                                <i class="bi bi-arrow-left"></i>
+                                Назад
+                            </a>
+                        </div>
+                        <div class="box-transit-btn">
+                            <a class="transit-btn">
+                                Наука
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wrapper-dropdown-menu">
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu_4" class="youth-policy-melsu-menu new-menu hidde">
+                    <div class="box-dropdown-btns">
+                        <div class="box-back-btn">
+                            <a class="back-btn">
+                                <i class="bi bi-arrow-left"></i>
+                                Назад
+                            </a>
+                        </div>
+                        <div class="box-transit-btn">
+                            <a class="transit-btn">
+                                Молодежная политика
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wrapper-dropdown-menu">
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu_5" class="ovz-melsu-menu new-menu hidde">
+                    <div class="box-dropdown-btns">
+                        <div class="box-back-btn">
+                            <a class="back-btn">
+                                <i class="bi bi-arrow-left"></i>
+                                Назад
+                            </a>
+                        </div>
+                        <div class="box-transit-btn">
+                            <a class="transit-btn">
+                                Доступная среда
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wrapper-dropdown-menu">
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                        <div class="box-dropdown-menu">
+                            <nav class="nav">
+                                <a class="nav-link" href="#">Студенту</a>
+                                <a class="nav-link" href="#">Поступающим</a>
+                                <a class="nav-link" href="#">Аспирантам</a>
+                                <a class="nav-link" href="#">Выпустникам</a>
+                                <a class="nav-link" href="#">Партнерам</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-section">
+        <section class="mt-[7%] mb-6">
+            <div class="container text-center">
+                <div class="border-b border-[#C10F1A] p-11">
+                    <h2 class="text-4xl md:text-6xl font-bold">Обновление страницы</h2>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-medium p-6">Пожалуйста, зайдите позже</h2>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#820000] p-12 flex justify-center flex-col items-center">
+            <div class="lg:w-3/5 text-center mb-12">
+                <h2 class="text-4xl font-medium text-white">В данный момент страница находится на техническом обслуживании</h2>
+            </div>
+            <div class="text-center">
+                <h2 class="font-medium text-white">Приносим извинения за временные неудобства</h2>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="pt-6 pb-4 bg-[#2E3146]">
+            <div class="container custom lg:p-2.5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-white">
+                    <div class="grid grid-cols-1">
+                        <h4 class="text-[#B9BAC1] text-md mb-3">Приемная ректора</h4>
+                        <a href="tel:79901469279" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 146-92-79</a>
+                        <a href="mailto:rektorat@mgu-mlt.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">rektorat@mgu-mlt.ru</a>
+                        <h4 class="text-[#B9BAC1] text-md my-3">Для писем</h4>
+                        <a href="mailto:rektorat@mgu-mlt.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">rektorat@mgu-mlt.ru</a>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <h4 class="text-[#B9BAC1] text-md mb-3">Приемная комиссия</h4>
+                        <a href="tel:79900215716" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 021-57-16</a>
+                        <a href="mailto:priyomnaya_komissiya@mgu-mlt.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">priyomnaya_komissiya@mgu-mlt.ru</a>
+                        <a href="https://yandex.ru/maps/10367/melitopol/house/prospekt_bogdana_khmelnitskogo_18/Z0wYdQBjS0QFQFpsfXR1d35iZQ==/?ll=35.373212%2C46.846212&z=17" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">г. Мелитополь, пр. Богдана Хмельницкого 18, аудитория: 1.116</a>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <h4 class="text-[#B9BAC1] text-md mb-3">Пресс-служба</h4>
+                        <a href="tel:79901427865" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 142-78-65</a>
+                        <a href="mailto:example@mail.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">example@mail.ru</a>
+                        <a href="https://yandex.ru/maps/10367/melitopol/house/prospekt_bogdana_khmelnitskogo_18/Z0wYdQBjS0QFQFpsfXR1d35iZQ==/?ll=35.373212%2C46.846212&z=17" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">г. Мелитополь, пр. Богдана Хмельницкого 18, аудитория: 1.116</a>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <h4 class="text-[#B9BAC1] text-md mb-3">Приемная ректора</h4>
+                        <a href="tel:799000000" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">+7(990) 000-00-00</a>
+                        <a href="mailto:example@mail.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">example@mail.ru</a>
+                        <h4 class="text-[#B9BAC1] text-md my-3">Для писем</h4>
+                        <a href="mailto:example@mail.ru" class="text-lg font-[600] mb-2 hover:opacity-80 transition duration-300 ease-linear">example@mail.ru</a>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center relative mt-2 mb-4
+                        before:content-[''] before:absolute before:top-[50%] before:left-0 before:w-[46%] before:h-[1px] before:bg-[#B9BAC1]
+                        after:content-[''] after:absolute after:top-[50%] after:right-0 after:w-[46%] after:h-[1px] after:bg-[#B9BAC1]">
+                    <div class="max-w-[35px] max-h-[44px]">
+                        <a href="#">
+                            <img src="../assets/img/bg-white-logo.png" alt="Логотип университета">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 text-center text-white mb-4">
+                    <h4 class="text-lg mb-2">Название юридического лица из ЕГРЮЛ:</h4>
+                    <p class="uppercase sm:text-lg mb-2">
+                        Федеральное государственное бюджетное образовательное учреждение высшего образования «Мелитопольский государственный университет»
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-white">
+                    <div class="grid grid-cols-1">
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                    </div>
+                    <div class="grid grid-cols-1">
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Сведения об образовательной организации</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">МелГУ в рейтингах</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Инклюзивное образование</a>
+                        <a href="#" class="text-md mb-4 hover:opacity-80 transition duration-300 ease-linear">Аккредитация специалистов</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#252738] py-6 text-white">
+            <div class="container custom lg:p-2.5 flex flex-col lg:flex-row gap-3">
+                <a href="#" class="text-md">Карта сайта</a>
+                <a href="#" class="text-md">Почтовый сервер</a>
+                <a href="#" class="text-md">Пользовательское соглашение</a>
+                <a href="#" class="text-md">Политика по обработке персональных данных</a>
+            </div>
+        </div>
+    </footer>
+    <div class="side_offset">
+        <ul class="box-side-social-link">
+            <li>
+                <a href="#" class="social-link">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social-link">
+                    <i class="bi bi-telegram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../assets/js/slider.js"></script>
+<script src="../assets/js/menu.js"></script>
+<script src="../assets/js/news-section-main-page.js"></script>
+<script src="../assets/js/counter-script.js"></script>
+<script src="../assets/js/filter-card.js"></script>
+<script src="../assets/js/search-in-box.js"></script>
+<script src="../assets/js/select-component.js"></script>
+<script src="../assets/js/aware-button-animaton.js"></script>
+<script src="../assets/js/slider-bg.js"></script>
+</body>
+</html>
