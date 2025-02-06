@@ -79,6 +79,7 @@ function checkScreenWidth() {
     } else {
         let hamburger = document.querySelector('.navbar-toggler');
         let backButtons = document.querySelectorAll('.back-btn');
+        console.log(underNavBarHeight)
         for (let i = 0; i < dropDownMenus.length; i++) {
             if (dropDownMenus[i]) {
                 dropDownMenus[i].classList.remove('hidde');
@@ -98,7 +99,7 @@ function checkScreenWidth() {
             content.classList.toggle('opacit');
             if(navBar.classList.contains('opened')){
                 let navbarCollapseOpened = document.querySelector('.navbar-collapse.opened');
-                navbarCollapseOpened.style.height = underNavBarHeight + 56.5 + 'px';
+                navbarCollapseOpened.style.height = underNavBarHeight + 56.5 + 56.5 + 'px';
                 searchBox.style.height = '0px';
             }
             else{
@@ -193,7 +194,7 @@ function resizeMenu () {
     let navbarCollapseHeight = navbarCollapseContent.getBoundingClientRect().height;
     if(navBar.classList.contains('opened')){
         let navbarCollapseOpened = document.querySelector('.navbar-collapse.opened');
-        navbarCollapseOpened.style.height = navbarCollapseHeight + 56.5 + 'px';
+        navbarCollapseOpened.style.height = navbarCollapseHeight + 56.5 + 56.5 + 'px';
     }
     else{
         navBar.style.height = '0px';
