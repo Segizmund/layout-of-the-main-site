@@ -86,13 +86,18 @@ body{
 }  /*END main wrapper style*/
 
 /*Header style*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 .hidde{
     display: none !important;
 }
 /*style search*/
 .search-box {
     background-color: #FAFAFA;
-    width: calc(100% - 100px);
+    width: 100%;
     transition: var(--transition-link);
     top: -311px;
     z-index: 81;
@@ -212,9 +217,14 @@ body{
         padding: 14px;
         font-weight: 500;
         transition: var(--transition-link);
-
+        svg{
+            transition: var(--transition-link);
+        }
         &:hover{
             color: var(--primary-color);
+        }
+        &:hover svg {
+            fill: var(--primary-color);
         }
     }
 }
@@ -272,7 +282,7 @@ body{
         }
     }
     .search-and-btn-box{
-        display: flex;
+        display: none;
         justify-content: space-between;
         margin-right: 3.3%;
         align-items: center;
@@ -306,9 +316,8 @@ body{
         flex-direction: column;
         flex-wrap: nowrap;
         top: 159px;
-        left: 100px;
+        left: 0px;
         z-index: 80;
-        max-width: calc(100% - 100px) !important;
         width: 100%;
         .box-back-btn{
             display: none;
@@ -490,10 +499,10 @@ body{
             height: 0;
             transition: all .3s cubic-bezier(.645,.045,.355,1);
             background-color: white;
-            width: 93vw;
+            width: 100%;
             position: absolute;
             top: 64px;
-            left: 100px;
+            left: 0;
             flex-direction: column;
             justify-content: start;
             .navbar-nav{
@@ -581,6 +590,7 @@ body{
 
         }
         .search-and-btn-box{
+            display: flex;
             height: auto;
             width: 100%;
             margin-right: 0;
@@ -3681,11 +3691,10 @@ td.today.active.start-date.active.end-date.available,
     box-shadow: 0 0 45px 0 rgba(255, 0, 0, 0.5);
     background: linear-gradient(90deg, #ED303C 0, #C10F1A 69%);
     transition: .3s linear;
-    position: fixed;
+    position: relative;
     z-index: 999;
     opacity: 1;
-    right: 100px;
-    bottom: 20px;
+    margin-right: 4%;
 }
 .excursion-btn:hover{
     box-shadow: 0 0 45px 0 rgb(255 0 0);
@@ -3695,12 +3704,12 @@ td.today.active.start-date.active.end-date.available,
     overflow: hidden;
     z-index: 100;
     position: absolute;
-    top: -190px;
-    width: 121%;
+    top: 60px;
+    width: 100%;
     .excursion-menu {
         background-color: #FFFFFF;
         line-height: 47px;
-        transform: translateY(100%);
+        transform: translateY(-100%);
         transition: .3s linear;
         h1 {
             background-color: var(--primary-color);
@@ -3715,7 +3724,8 @@ td.today.active.start-date.active.end-date.available,
             border-bottom: 1px solid var(--primary-color);
             background-color: white;
             cursor: pointer;
-            padding: 0 22px;
+            padding: 0 22px !important;
+            min-height: fit-content !important;
             color: var(--secondary-color);
             line-height: 47px;
             transition: .3s linear;
@@ -3742,15 +3752,16 @@ td.today.active.start-date.active.end-date.available,
     cursor: pointer;
     position: absolute;
     z-index: 999;
-    right: -95px;
-    top: -65px;
-    max-height: 208px;
+    right: -38px;
+    top: -38px;
+    max-height: 114px;
 }
 a.modal-open {
     cursor: pointer;
     color: white;
     font-size: 24px;
-    width: 345px;
+    width: 300px;
+    height: 60px;
     display:flex;
     align-items: center;
     padding: 20px 100px 20px 20px;
@@ -3845,6 +3856,28 @@ a.modal-open {
 .modal-area input[type="radio"]:checked + label {
     background:#fff;
     color:#424242;
+}
+@media screen and (max-width: 1440px){
+    .excursion-menu-box {
+        & .excursion-menu {
+            li{
+                line-height: 37px;
+            }
+            h1 {
+                font-size: 19px;
+            }
+        }
+    }
+    a.modal-open{
+        width: 200px;
+        font-size: 16px;
+        padding-right: 60px;
+    }
+    #anim-logo{
+        right: -34px;
+        top: -22px;
+        max-height: 95px;
+    }
 }
 @media screen and (max-width: 1024px){
     .excursion-btn{
