@@ -4165,6 +4165,9 @@ a.modal-open {
 .left-info-box .info-hex-wrapp .info-hex-content.center-info-content{
     margin-right: 56px;
 }
+.right-info-box .info-hex-wrapp .info-hex-content.center-info-content{
+    margin-left: 56px;
+}
 .info-hex-wrapp .info-hex-content{
     width: 56%;
 }
@@ -4173,6 +4176,9 @@ a.modal-open {
 }
 .left-info-box .info-hex-content h3{
     padding-right: 112px;
+}
+.right-info-box .info-hex-wrapp h3{
+    padding-left: 112px;
 }
 .right-info-box .info-hex-content p{
     width: 90%;
@@ -4269,16 +4275,8 @@ a.modal-open {
     .left-info-box .info-hex-wrapp .info-hex-content.center-info-content{
         margin-right: 35px;
     }
-    .right-info-box .info-hex-wrapp h3{
-        padding-left: 112px;
-    }
     .right-info-box .info-hex-wrapp .info-hex-content.center-info-content{
         margin-left: 35px;
-    }
-}
-@media screen and (min-width: 1919px){
-    .info-hex-wrapp .info-hex-content{
-        width: 90%;
     }
 }
 /*END Melsu this is style*/
