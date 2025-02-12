@@ -4162,4 +4162,123 @@ a.modal-open {
     bottom: 98px;
     right: -105px;
 }
+.left-info-box .info-hex-wrapp .info-hex-content.center-info-content{
+    margin-right: 56px;
+}
+.info-hex-wrapp .info-hex-content{
+    width: 56%;
+}
+.info-hex-wrapp .info-hex-content p{
+    width: 70%;
+}
+.left-info-box .info-hex-content h3{
+    padding-right: 112px;
+}
+.right-info-box .info-hex-content p{
+    width: 90%;
+    padding-left: 112px;
+}
+@media screen and (max-width: 1965px){
+    .info-hex-wrapp .info-hex-content{
+        width: 80%;
+    }
+    .left-info-box .info-hex-wrapp{
+        padding-left: 10px;
+    }
+    .right-info-box .info-hex-wrapp{
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 1920px){
+    .hex{
+        width: 442px;
+        height: 420px;
+    }
+    .hexinner{
+        width: 438px;
+        height: 416px;
+    }
+    .hex-content-box{
+        width: 410px;
+        height: 393px;
+    }
+    .left-top-line{
+        top: 63px;
+        left: 24px;
+    }
+    .left-top-line:before {
+        width: 130px;
+        top: 53px;
+        left: -102px;
+    }
+    .left-top-line:after {
+        top: 106px;
+        left: -130px;
+    }
+
+    .right-top-line{
+        top: 63px;
+        right: 24px;
+    }
+    .right-top-line:before {
+        width: 130px;
+        top: -53px;
+        left: -102px;
+    }
+    .right-top-line:after {
+        top: -106px;
+        right: 141px;
+    }
+
+    .left-center-line {
+        width: 130px;
+        left: -114px;
+    }
+    .right-center-line {
+        width: 130px;
+        right: -114px;
+    }
+
+    .left-bottom-line {
+        bottom: 63px;
+        left: 25px;
+    }
+    .left-bottom-line:before {
+        width: 130px;
+        bottom: -54px;
+        left: 92px;
+    }
+    .left-bottom-line:after {
+        width: 110px;
+        bottom: -109px;
+        left: 138px;
+    }
+
+    .right-bottom-line {
+        right: 24px;
+    }
+    .right-bottom-line:before {
+        width: 130px;
+        bottom: 53px;
+        right: -102px;
+    }
+    .right-bottom-line:after {
+        bottom: 107px;
+        right: -130px;
+    }
+    .left-info-box .info-hex-wrapp .info-hex-content.center-info-content{
+        margin-right: 35px;
+    }
+    .right-info-box .info-hex-wrapp h3{
+        padding-left: 112px;
+    }
+    .right-info-box .info-hex-wrapp .info-hex-content.center-info-content{
+        margin-left: 35px;
+    }
+}
+@media screen and (min-width: 1919px){
+    .info-hex-wrapp .info-hex-content{
+        width: 90%;
+    }
+}
 /*END Melsu this is style*/
