@@ -4170,6 +4170,9 @@ a.modal-open {
 .right-info-box .info-hex-wrapp .info-hex-content.center-info-content{
     margin-left: 56px;
 }
+.info-hex-content h3{
+    font-size: 24px;
+}
 .info-hex-wrapp .info-hex-content{
     width: 60%;
 }
@@ -4373,6 +4376,59 @@ a.modal-open {
     .right-bottom-img{
         bottom: 78px;
         right: -75px;
+    }
+}
+@media screen and (max-width: 1420px){
+    .info-hex-content h3{
+        font-size: 19px;
+    }
+    .hex {
+        width: 320px;
+        height: 280px;
+    }
+    .hexinner {
+        width: 316px;
+        height: 276px;
+    }
+    .hex-content-box {
+        width: 288px;
+        height: 254px;
+    }
+    .hex-logo {
+        width: 100px;
+    }
+    .hex-content{
+        width: 147px;
+    }
+    .hex-content h2{
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    .left-top-line {
+        width: 100px;
+        left: 10px;
+        top: 71px;
+    }
+    .left-top-line:before {
+        width: 90px;
+        top: 36px;
+        left: -71px;
+    }
+    .right-top-line{
+        width: 100px;
+        top: 71px;
+        right: 10px;
+    }
+    .right-top-line:before {
+        width: 90px;
+        top: -36px;
+        left: -71px;
+    }
+    .right-top-line:after {
+        width: 80px;
+        top: -72px;
+        right: 115px;
     }
 }
 /*END Melsu this is style*/
