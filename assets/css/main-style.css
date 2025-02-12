@@ -4671,4 +4671,55 @@ a.modal-open {
         padding-left: 20px;
     }
 }
+@media screen and (max-width: 1023px){
+    .left-top-img, .right-top-img, .left-bottom-img, .right-bottom-img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .left-top-img {
+        left: 10px;
+        top: 0;
+    }
+    .right-top-img {
+        right: 10px;
+        top: 0;
+    }
+    .left-bottom-img {
+        left: 10px;
+        bottom: 0;
+    }
+    .right-bottom-img {
+        right: 10px;
+        bottom: 0;
+    }
+    .left-info-box,
+    .right-info-box{
+        padding: 0px 10px;
+    }
+    .left-info-box .info-hex-content h3, .left-info-box .info-hex-content p {
+        padding-right: 0px !important;
+    }
+    .right-info-box .info-hex-content h3, .right-info-box .info-hex-content p {
+        padding-left: 0px !important;
+    }
+    .info-hex-content.center-info-content {
+        margin: 0 !important;
+    }
+    .info-hex-wrapp{
+        background-color: #FFFFFF;
+        padding: 10px !important;
+        margin-bottom: 20px !important;
+    }
+}
+@media screen and (max-width: 460px){
+    .left-top-img,
+    .right-top-img,
+    .left-bottom-img,
+    .right-bottom-img{
+        display: none;
+    }
+    .hex{
+        margin: 0 auto;
+    }
+}
 /*END Melsu this is style*/
