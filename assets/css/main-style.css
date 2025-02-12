@@ -3906,7 +3906,9 @@ a.modal-open {
 }
 
 /*Melsu this is style*/
-
+.middle-block-hex{
+    margin: 56px 0;
+}
 .hex {
     margin: 100px auto;
     position: relative;
@@ -4148,19 +4150,19 @@ a.modal-open {
 }
 .left-top-img{
     top: 98px;
-    left: -105px;
+    left:  -144px;;
 }
 .right-top-img{
     top: 98px;
-    right: -105px;
+    right: -144px;
 }
 .left-bottom-img{
     bottom: 98px;
-    left: -105px;
+    left: -144px;
 }
 .right-bottom-img{
     bottom: 98px;
-    right: -105px;
+    right: -144px;
 }
 .left-info-box .info-hex-wrapp .info-hex-content.center-info-content{
     margin-right: 56px;
@@ -4173,6 +4175,7 @@ a.modal-open {
 }
 .info-hex-wrapp .info-hex-content p{
     width: 70%;
+    line-height: 18.2px;
 }
 .left-info-box .info-hex-content h3{
     padding-right: 112px;
@@ -4198,15 +4201,15 @@ a.modal-open {
 @media screen and (max-width: 1920px){
     .hex{
         width: 442px;
-        height: 420px;
+        height: 382px;
     }
     .hexinner{
         width: 438px;
-        height: 416px;
+        height: 378px;
     }
     .hex-content-box{
         width: 410px;
-        height: 393px;
+        height: 356px;
     }
     .left-top-line{
         top: 63px;
@@ -4237,10 +4240,12 @@ a.modal-open {
     }
 
     .left-center-line {
+        top: 290px;
         width: 130px;
         left: -114px;
     }
     .right-center-line {
+        top: 290px;
         width: 130px;
         right: -114px;
     }
@@ -4277,6 +4282,97 @@ a.modal-open {
     }
     .right-info-box .info-hex-wrapp .info-hex-content.center-info-content{
         margin-left: 35px;
+    }
+
+    .left-top-img{
+        top: 78px;
+        left: -112px;
+    }
+    .right-top-img{
+        top: 78px;
+        right: -112px;
+    }
+    .left-bottom-img{
+        bottom: 78px;
+        left: -112px;
+    }
+    .right-bottom-img{
+        bottom: 78px;
+        right: -112px;
+    }
+}
+@media screen and (max-width: 1919px){
+    .info-hex-wrapp .info-hex-content{
+        width: 90%;
+    }
+    .right-info-box .info-hex-content p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1770px){
+    .middle-block-hex{
+        margin: 40px 0;
+    }
+    .hex {
+        width: 390px;
+        height: 332px;
+    }
+    .hexinner {
+        width: 386px;
+        height: 328px;
+    }
+    .hex-content-box {
+        width: 358px;
+        height: 303px;
+    }
+    .hex-content {
+        padding: 20px 0px;
+    }
+    .right-top-line {
+        right: 11px;
+    }
+    .left-top-line {
+        left: 11px;
+    }
+    .left-bottom-line {
+        bottom: 65px;
+        left: 12px;
+    }
+    .right-bottom-line {
+        bottom: 66px;
+        right: 12px;
+    }
+    .left-top-img,
+    .right-top-img,
+    .left-bottom-img,
+    .right-bottom-img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    .info-hex-wrapp .info-hex-content {
+        width: 100%;
+    }
+    .info-hex-wrapp .info-hex-content p{
+        width: 100%;
+    }
+    .left-info-box .info-hex-content p{
+        padding-right: 112px;
+    }
+    .left-top-img{
+        top: 78px;
+        left: -75px;
+    }
+    .right-top-img{
+        top: 78px;
+        right: -75px;
+    }
+    .left-bottom-img{
+        bottom: 78px;
+        left: -75px;
+    }
+    .right-bottom-img{
+        bottom: 78px;
+        right: -75px;
     }
 }
 /*END Melsu this is style*/
