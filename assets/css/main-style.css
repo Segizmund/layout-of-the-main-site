@@ -4723,3 +4723,19 @@ a.modal-open {
     }
 }
 /*END Melsu this is style*/
+/*modal img style*/
+.modal-image{
+    margin: auto;
+}
+.modal-image::backdrop{
+    backdrop-filter: brightness(.5);
+}
+.modal-image-content img{
+
+}
+@media screen and (max-width: 1280px){
+    .modal-image{
+        margin: auto 10px;
+    }
+}
+/*END modal img style*/
