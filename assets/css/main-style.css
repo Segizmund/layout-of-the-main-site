@@ -4183,7 +4183,7 @@ a.modal-open {
 .left-info-box .info-hex-content h3{
     padding-right: 112px;
 }
-.right-info-box .info-hex-wrapp h3{
+.right-info-box .info-hex-wrapp h3,.right-info-box .info-hex-content span{
     padding-left: 112px;
 }
 .right-info-box .info-hex-content p{
@@ -4518,11 +4518,13 @@ a.modal-open {
         padding-right: 60px;
     }
     .right-info-box .info-hex-content h3,
-    .right-info-box .info-hex-content p{
+    .right-info-box .info-hex-content p,
+    .right-info-box .info-hex-content span{
         padding-left: 70px;
     }
     .right-info-box .info-hex-content.center-info-content h3,
-    .right-info-box .info-hex-content.center-info-content p{
+    .right-info-box .info-hex-content.center-info-content p,
+    .right-info-box .info-hex-content.center-info-content span{
         padding-left: 60px;
     }
 }
@@ -4664,10 +4666,10 @@ a.modal-open {
     .left-info-box .info-hex-content.center-info-content p {
         padding-right: 20px;
     }
-    .right-info-box .info-hex-content h3, .right-info-box .info-hex-content p {
+    .right-info-box .info-hex-content h3, .right-info-box .info-hex-content p, .right-info-box .info-hex-content span {
         padding-left: 45px;
     }
-    .right-info-box .info-hex-content.center-info-content h3, .right-info-box .info-hex-content.center-info-content p {
+    .right-info-box .info-hex-content.center-info-content h3, .right-info-box .info-hex-content.center-info-content p, .right-info-box .info-hex-content.center-info-content span {
         padding-left: 20px;
     }
 }
@@ -4699,7 +4701,7 @@ a.modal-open {
     .left-info-box .info-hex-content h3, .left-info-box .info-hex-content p {
         padding-right: 0px !important;
     }
-    .right-info-box .info-hex-content h3, .right-info-box .info-hex-content p {
+    .right-info-box .info-hex-content h3, .right-info-box .info-hex-content p, .right-info-box .info-hex-content span {
         padding-left: 0px !important;
     }
     .info-hex-content.center-info-content {
